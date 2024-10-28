@@ -1,0 +1,114 @@
+* {
+    font-family: -apple-system,BlinkMacSystemFont,Open Sans,Roboto,Helvetica Neue,Helvetica,sans-serif;
+    color:var(--color-text);
+}
+
+a {
+    text-decoration: none;
+}
+
+a.active.focus,
+a.active:focus,
+a.focus,
+a:active.focus,
+a:active:focus,
+a:focus,
+.form-check-input.active.focus,
+.form-check-input.active:focus,
+.form-check-input.focus,
+.form-check-input:active.focus,
+.form-check-input:active:focus,
+.form-check-input:focus,
+button.active.focus,
+button.active:focus,
+button.focus,
+button:active.focus,
+button:active:focus,
+button:focus,
+.btn.active.focus,
+.btn.active:focus,
+.btn.focus,
+.btn:active.focus,
+.btn:active:focus,
+.btn:focus {
+outline: 0!important;
+outline-color: transparent!important;
+outline-width: 0!important;
+outline-style: none!important;
+box-shadow: 0 0 0 0 rgba(0,123,255,0)!important;
+}
+
+:root {
+    --color-text: white;
+    --color-text-revert:black;
+    --color-show-sidebar:#414141;
+    --color-bg:#6b4b2b;
+    --color-bg2:black;
+    --color-input:#a67544;
+    --color-after-header-link:#a67544;
+    --color-card-link:white;
+    --color-vk-button:#6b4b2b;
+    --color-vk-button-bg:white;
+    --color-header-btn-border:rgba(255,255,255,.3);
+    --background-header:url(../../images/header.jpg) center;
+    --color-book-card:#252525;
+    --color-card-title:#8f8f8f;
+    
+    --color-ah-resp:#7e5935;
+
+    --color-glace:rgb(0, 0, 0, 0);
+    --color-placeholder:#212529;
+    --color-input-icon:black;
+    --color-social-link:white;
+    --color-sidebar:#d8bb9e;
+    --color-breadcrumb:#97826c;
+    
+
+    --color-fb:#3b5998;
+    --color-tw:#1b95e0;
+    --color-gg:#db4437;
+    --color-vk:#507299;
+
+    --light--color-text: black;
+    --light--color-text-revert:white;
+    --light--color-show-sidebar:#e7e7e7;
+    --light--color-bg:#f6f7bd;
+    --light--color-bg2:#e1f3ff;
+    --light--color-input:#e1f3ff;
+    --light--color-after-header-link:#beff0a;
+    --light--color-card-link:#beff0a;
+    --light--color-header-btn-border:rgba(0,0,0,.3);
+    --light--color-vk-button-bg:#beff0a;
+    --light--color-vk-button:black;
+    --light--background-header:url(../../images/header-light.jpg) center;
+    --light--color-book-card:#a6bec5;
+    --light--color-card-title:#fccb82;
+
+    --color-submit:#ad743a;
+    --color-submit-hv:#d3893e;
+    --color-submit-fc:#f19e4a;
+    --color-exit-hv:red;
+
+    --color-ft-head:var(--color-bg);
+    --color-ft-title:var(--color-after-header-link);
+    --color-ft:var(--color-book-card);
+
+    --color-ft-str:#585858;
+    --color-ft-str-hv:#808080;
+    --light--color-ft-str:var(--color-input);
+    --light--color-ft-str-hv:#e4e4e4;
+
+}
+
+header {
+    background: var(--background-header);
+}
+
+.fa {
+    color: var(--color-social-link);
+}
+
+.wide-c {
+    max-width: 1500px;
+}
+

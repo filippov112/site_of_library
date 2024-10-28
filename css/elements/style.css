@@ -1,0 +1,14 @@
+.around-block {
+    display: flex;
+    padding: 5px;
+    border-radius: 1ch;
+    border: 2px solid;
+    border-color:var(--color-text);
+    color:var(--color-text);
+}
+
+
+.around-block:hover {
+    background-color:var(--color-vk-button-bg);
+    color: var(--color-vk-button);
+}

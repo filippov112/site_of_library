@@ -1,0 +1,41 @@
+#book-content {
+    padding:20px 0 0 20px;
+    min-height:calc(100vh - 110px);
+    overflow: auto;
+}
+#book-content h4 {
+    font-size: 2rem;
+    line-height: 1.6;
+    font-weight: bold;
+    padding:15px 0;
+}
+
+#book-content h6 {
+    font-size: 1.3rem;
+    margin:10px 0;
+    font-weight: bold;
+}
+
+#book-content ul {
+    margin: 0 0 0 20px;
+    padding: 0 0 0 20px;
+    list-style: disc;
+}
+#book-content li {
+    margin-bottom: 10px;
+}
+#book-content b {
+    display: block;
+    margin:7px 0;
+    font-weight: bold;
+}
+
+.eb-faq {
+    display: grid;
+    justify-content: center;
+    grid-template-columns: 100%;
+    grid-gap: 20px;
+}
+.book-body {
+
+}

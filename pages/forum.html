@@ -1,0 +1,807 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Филипедия. Форум</title>
+    <link rel="shortcut icon" href="../images/favicon.svg" type="image/x-icon">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/all.css">
+</head>
+<body class="forum-body">
+    <div id="after-header">
+        <div class="ah-bg"></div>
+        <div class="container wide-c" id="ah-wrap">
+            <button id="ah-icon" class="ah-link ah-hover center-flex">
+                &#9776;
+            </button>
+            <div id="ah-rollable" class="ah-deployed">
+                <a href="books.html" class="ah-link ah-hover center-flex">Книжный каталог</a> 
+                <a href="videos.html" class="ah-link ah-hover center-flex">Видео курсы</a> 
+                <div class="ah-link active-module center-flex">Форум</div>
+                <a href="new_articles.html" class="ah-link ah-hover center-flex">Добавить статью</a>
+            </div>
+            <form action="/search" method="get" class="search">
+                <input type="search" autocomplete="on | off" class="search-input">
+            </form>
+            <div class="center-flex ah-link ah-hover theme-wrap">
+                <button type="button" data-toggle="modal" class="mini-lk-button" data-target="#staticBackdrop">
+                    <i class="fa-solid fa-house home-icon"></i>
+                </button>
+            </div>
+            <div class="center-flex theme-wrap">
+                <div class="form-check form-switch">
+                    <input class="form-check-input theme-switch" type="checkbox" id="flexSwitchCheckDefault">
+                    <div class="theme-switch-label bi bi-sun-fill"></div>
+                </div>
+            </div>
+        </div>
+        <div id="ah-responsive">
+            <a href="books.html" class="ah-link ah-hover center-flex">Книжный каталог</a> 
+            <a href="videos.html" class="ah-link ah-hover center-flex">Видео курсы</a> 
+            <div class="ah-link active-module center-flex">Форум</div>
+            <a href="new_articles.html" class="ah-link ah-hover center-flex">Добавить статью</a>
+        </div>
+        <div class="breadcrumb">
+            <ul class="bread container wide-c">
+                <li><a href="/">/</a></li>
+                <li><i class="bi bi-chevron-right"></i></li>
+                <li>Форум</li>
+            </ul>
+        </div>
+    </div>
+    <div class="main-container container wide-c">
+        <div id="forum-content">
+            <div class="forum-cont-main">
+                <div class="forum-head-content">
+                    <div class="forum-news-wrap">
+                        <div class="forum-head-title"><b>Последние сообщения на форуме</b></div>
+                        <table class="forum-news">
+                            <colgroup>
+                                <col class="fn-col-time">
+                                <col class="fn-col-content">
+                            </colgroup>
+                            <tbody>
+                                <tr class="ft-str ft-first-str">
+                                    <td>09:30</td>
+                                    <td>Игровой монитор Digma DM-MONG2750: QHD-экран 27 дюймов на матрице IPS, частота обновления 165 Гц, поддержка AMD FreeSync и Nvidia G-Sync Compatible</td>
+                                </tr>
+                                <tr class="ft-str">
+                                    <td>18:00
+                                        вчера</td>
+                                    <td>Ноутбук Horizont H-book 15 MAK4 (T74E4W): знакомимся с новой продукцией белорусского холдинга</td>
+                                </tr>
+                                <tr class="ft-str">
+                                    <td>14:00
+                                        вчера</td>
+                                    <td>Рожковая кофеварка Redmond RCM-M1513: приготовит одинарный и двойной эспрессо и запомни</td>
+                                </tr>
+                                <tr class="ft-str">
+                                    <td>10:00
+                                        вчера</td>
+                                    <td>Настольная мини-колонка Divoom DitooMic: пиксель-арт с караоке для гиков и детей</td>
+                                </tr>
+                                <tr class="ft-str">
+                                    <td>2 дня назад</td>
+                                    <td>Видеокарта Gigabyte Aorus Radeon RX 7900 XTX Elite (24 ГБ): внушительные габариты, шумный кулер, стильный дизайн с эффектной подсветкой</td>
+                                </tr>
+                                <tr class="ft-str">
+                                    <td>2 дня назад</td>
+                                    <td>Игровое кресло Zone 51 Predator: «хищник» с изменяемой геометрией спинки</td>
+                                </tr>
+                                <tr class="ft-str">
+                                    <td>2 дня назад</td>
+                                    <td>Отпариватель Kitfort КТ-9122: недорогая напольная модель</td>
+                                </tr>
+                                <tr class="ft-str">
+                                    <td>2 дня назад</td>
+                                    <td>Cлайсер Anycubic Photon Workshop и устройства Anycubic Wash & Cure: до и после 3D-печати</td>
+                                </tr>
+                                <tr class="ft-str">
+                                    <td>3 дня назад</td>
+                                    <td>Проводная ударная дрель Starwind DIS-850: компактная, мощная и недорогая</td>
+                                </tr>
+                                <tr class="ft-str">
+                                    <td>3 дня назад</td>
+                                    <td>Смартфон Umidigi G1 Max: симпатичный бюджетный аппарат без претензий</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div class="forum-photo-wrap">
+                        <div class="forum-head-title fht-static"><b>Фотогалерея</b></div>
+                        <table class="forum-photo">
+                            <tbody>
+                                <tr class="ft-first-str">
+                                    <td class="photo-container-wrap">
+                                        <div class="photo-container">
+                                            <img class="photo-block" src="../images/photo/1.jpg" alt="">
+                                            <img class="photo-block" src="../images/photo/2.jpg" alt="">
+                                            <img class="photo-block" src="../images/photo/3.jpg" alt="">
+                                            <img class="photo-block" src="../images/photo/4.jpg" alt="">
+                                            <img class="photo-block" src="../images/photo/5.jpg" alt="">
+                                            <img class="photo-block" src="../images/photo/6.jpg" alt="">
+                                            <img class="photo-block" src="../images/photo/7.jpg" alt="">
+                                            <img class="photo-block" src="../images/photo/8.jpg" alt="">
+                                            <img class="photo-block" src="../images/photo/9.jpg" alt="">
+                                            <img class="photo-block" src="../images/photo/10.jpg" alt="">
+                                            <img class="photo-block" src="../images/photo/11.jpg" alt="">
+                                            <img class="photo-block" src="../images/photo/12.jpg" alt="">
+                                            <img class="photo-block" src="../images/photo/13.jpg" alt="">
+                                            <img class="photo-block" src="../images/photo/14.jpg" alt="">
+                                            <img class="photo-block" src="../images/photo/15.jpg" alt="">
+                                            <img class="photo-block" src="../images/photo/16.jpg" alt="">
+                                            <img class="photo-block" src="../images/photo/17.jpg" alt="">
+                                            <img class="photo-block" src="../images/photo/18.jpg" alt="">
+                                            <img class="photo-block" src="../images/photo/19.jpg" alt="">
+                                            <img class="photo-block" src="../images/photo/20.jpg" alt="">
+                                            <img class="photo-block" src="../images/photo/21.jpg" alt="">
+                                            <img class="photo-block" src="../images/photo/22.jpg" alt="">
+                                            <img class="photo-block" src="../images/photo/23.jpg" alt="">
+                                            <img class="photo-block" src="../images/photo/24.jpg" alt="">
+                                        </div>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>                
+                <div class="forum-table-wrap">
+                    <table class="forum-table">
+                        <colgroup>
+                            <col class="ft-col-0">
+                            <col class="ft-col-1">
+                            <col class="ft-col-2">
+                            <col class="ft-col-3">
+                            <col class="ft-col-4">
+                        </colgroup>
+                        <tbody>
+                        
+                            <tr class="ft-head">
+                                <td><b>Информация о форуме</b></td>
+                                <td><b>Ответы</b></td>
+                                <td><b>Темы</b></td>
+                                <td><b>Модератор</b></td>
+                                <td><b>Обновления</b></td>
+                            </tr>                           
+                            <tr class="ft-str">
+                                <td><span class="big"><b><a href="forum.cgi?forum=bm">Закладки</a></b></span></td>
+                                <td>777</td>
+                                <td>1</td>
+                                <td><a href="profile.cgi?action=show&amp;member=Guest">Guest</a></td>
+                                <td>Дата: <b>02-09-2005</b>                               
+                                    <br>Время: <b>20:44</b>                               
+                                    <br>Автор:<a href="profile.cgi?action=show&amp;member=scales01">scales01</a>                               
+                                    <br><a href="topic.cgi?forum=18&amp;bm=1&amp;topic=0137&amp;glp#lt">Форум-Закладки. Новая фича на...</a>
+                                </td>
+                            </tr>
+
+
+                            <tr class="ft-title">
+                                <td colspan="5"><b><span>»</span> <a href="board.cgi?catplace=3"><span>Компьютеры</span></a></b></td>
+                            </tr>                  
+                            <tr class="ft-str">
+                                <td><span class="big"><b><a href="forum.cgi?forum=active15">Операционные системы</a></b></span>
+                                    <br>Выбор, установка, настройка, решение проблем с операционными системами.
+                                    <br>Включает форумы: 
+                                    <a href="forum.cgi?forum=62">Microsoft Windows</a>, 
+                                    <a href="forum.cgi?forum=65">UNIX</a>, 
+                                    <a href="forum.cgi?forum=66">Другие ОС</a>
+                                </td>
+                                <td>1207804</td>
+                                <td>68545</td>
+                                <td>
+                                    <a href="profile.cgi?action=show&amp;member=lynx">lynx</a>, 
+                                    <a href="profile.cgi?action=show&amp;member=dg">dg</a>, 
+                                    <a href="profile.cgi?action=show&amp;member=KLASS">KLASS</a>, 
+                                    <a href="profile.cgi?action=show&amp;member=IFkO">IFkO</a>, 
+                                    <a href="profile.cgi?action=show&amp;member=vu1tur">vu1tur</a>
+                                </td>
+                                <td>Дата: <b>30-03-2023</b>
+                                    <br>Время: <b>12:42</b>
+                                    <br>Автор:<a href="profile.cgi?action=show&amp;member=Sergey250">Sergey250</a> 
+                                    <br><a href="topic.cgi?forum=62&amp;topic=31524&amp;glp#lt">Windows 10. Обсуждение работы...</a>
+                                </td>
+                            </tr>                           
+                            <tr class="ft-str">
+                            <td><span class="big"><b><a href="board.cgi?catplace=14">Игры</a></b></span>
+                                <br>Все о компьютерных играх и вокруг них. (<a href="forum.cgi?forum=active14">Активные темы</a>)
+                                <br><a href="forum.cgi?forum=32">Общие вопросы</a>
+                                <br><a href="forum.cgi?forum=71">Strategy</a>
+                                <br><a href="forum.cgi?forum=72">Action&nbsp;&amp;&nbsp;Arcade</a>
+                                <br><a href="forum.cgi?forum=73">RPG&nbsp;&amp;&nbsp;Adventure</a>
+                                <br><a href="forum.cgi?forum=74">Sport&nbsp;&amp;&nbsp;Simulation</a>
+                                <br><a href="forum.cgi?forum=75">Небольшие интересные игры</a>
+                                <br><a href="forum.cgi?forum=61">Форумные игры</a>
+                                <br><a href="blog.cgi?id=108">Новости Игрового Мира</a></td>
+                            <td>1582814</td>
+                            <td>23890</td>
+                            <td>
+                                <a href="profile.cgi?action=show&amp;member=Cossack">Cossack</a>, 
+                                <a href="profile.cgi?action=show&amp;member=RapSoldier">RapSoldier</a>, 
+                                <a href="profile.cgi?action=show&amp;member=VdV">VdV</a>
+                            </td>
+                            <td>Дата: <b>28-03-2023</b>
+                                <br>Время: <b>18:14</b>
+                                <br>Автор:<a href="profile.cgi?action=show&amp;member=conservator">conservator</a> 
+                                <br><a href="topic.cgi?forum=75&amp;topic=1057&amp;glp#lt">MahJong Suite</a></td>
+                            </tr>                           
+                            <tr class="ft-str">
+                            <td><span class="big"><b><a href="forum.cgi?forum=36">Цифровое изображение</a></b></span>
+                                <br>Обсуждение цифровой видео и фото техники.</td>
+                            <td>443484</td>
+                            <td>5714</td>
+                            <td>
+                                <a href="profile.cgi?action=show&amp;member=GoodCos13">GoodCos13</a>, 
+                                <a href="profile.cgi?action=show&amp;member=xy">xy</a>, 
+                                <a href="profile.cgi?action=show&amp;member=Maz">Maz</a>
+                            </td>
+                            <td>Дата: <b>30-03-2023</b>
+                                <br>Время: <b>13:19</b>
+                                <br>Автор:<a href="profile.cgi?action=show&amp;member=akaGM">akaGM</a> 
+                                <br><a href="topic.cgi?forum=36&amp;topic=3101&amp;glp#lt">=== Zed's Cafe v.XXIX ===</a></td>
+                            </tr>
+                            <tr class="ft-str">
+                            <td><span class="big"><b><a href="forum.cgi?forum=5">Программы</a></b></span>
+                                <br>Программное обеспечение компьютеров.</td>
+                            <td>5120454</td>
+                            <td>84206</td>
+                            <td>
+                                <a href="profile.cgi?action=show&amp;member=gyra">gyra</a>, 
+                                <a href="profile.cgi?action=show&amp;member=Maz">Maz</a>
+                            </td>
+                            <td>Дата: <b>30-03-2023</b>
+                                <br>Время: <b>13:52</b>
+                                <br>Автор:<a href="profile.cgi?action=show&amp;member=los">los</a> 
+                                <br><a href="topic.cgi?forum=5&amp;topic=45173&amp;glp#lt">FFmpeg</a></td>
+                            </tr>
+                            <tr class="ft-str">
+                            <td><span class="big"><b><a href="forum.cgi?forum=8">В помощь системному администратору</a></b></span>
+                                <br>Решение проблем с локальными и глобальными компьютерными сетями. Выбор и настройка сетевого ПО, оборудования, управление пользователями и правами, теоретические вопросы.</td>
+                            <td>913070</td>
+                            <td>102774</td>
+                            <td>
+                                <a href="profile.cgi?action=show&amp;member=lynx">lynx</a>, 
+                                <a href="profile.cgi?action=show&amp;member=Crash_Master">Crash_Master</a>, 
+                                <a href="profile.cgi?action=show&amp;member=dg">dg</a>, 
+                                <a href="profile.cgi?action=show&amp;member=emx">emx</a>, 
+                                <a href="profile.cgi?action=show&amp;member=ShriEkeR">ShriEkeR</a>
+                            </td>
+                            <td>Дата: <b>30-03-2023</b>
+                                <br>Время: <b>12:45</b>
+                                <br>Автор:<a href="profile.cgi?action=show&amp;member=AlexsandrSE">AlexsandrSE</a> 
+                                <br><a href="topic.cgi?forum=8&amp;topic=82117&amp;glp#lt">Kerio Control (ex Kerio WinRoute...</a></td>
+                            </tr>
+                            <tr class="ft-str">
+                            <td><span class="big"><b><a href="forum.cgi?forum=33">Прикладное программирование</a></b></span>
+                                <br>Delphi, C\C++, Python, Assembler ...</td>
+                            <td>373168</td><td>26682</td><td><a href="profile.cgi?action=show&amp;member=ShIvADeSt">ShIvADeSt</a></td>
+                            <td>Дата: <b>30-03-2023</b>
+                                <br>Время: <b>13:13</b>
+                                <br>Автор:<a href="profile.cgi?action=show&amp;member=mithridat1">mithridat1</a> 
+                                <br><a href="topic.cgi?forum=33&amp;topic=8512&amp;glp#lt">Python</a></td>
+                            </tr>
+                            <tr class="ft-str">
+                            <td><span class="big"><b><a href="board.cgi?catplace=11">Hardware</a></b></span>
+                                <br>Форум по железной части компьютера. (<a href="forum.cgi?forum=active11">Активные темы</a>)
+                                <br><a href="forum.cgi?forum=27">Общие вопросы</a>
+                                <br><a href="forum.cgi?forum=81">Драйверы и прошивки BIOS</a>
+                                <br><a href="forum.cgi?forum=82">Видеосистема</a>
+                                <br><a href="forum.cgi?forum=83">Оптические носители информации</a>
+                                <br><a href="forum.cgi?forum=84">Магнитные носители информации</a>
+                                <br><a href="forum.cgi?forum=88">Периферийные устройства</a>
+                                <br><a href="forum.cgi?forum=67">Выбор комплектующих</a></td>
+                            <td>1617572</td>
+                            <td>103184</td>
+                            <td>
+                                <a href="profile.cgi?action=show&amp;member=Akam1">Akam1</a>, 
+                                <a href="profile.cgi?action=show&amp;member=Dr_StandBy">Dr_StandBy</a>, 
+                                <a href="profile.cgi?action=show&amp;member=vertex4">vertex4</a>, 
+                                <a href="profile.cgi?action=show&amp;member=GoodCos13">GoodCos13</a>
+                            </td>
+                            <td>Дата: <b>30-03-2023</b>
+                                <br>Время: <b>13:53</b>
+                                <br>Автор:<a href="profile.cgi?action=show&amp;member=MERCURY127">MERCURY127</a> 
+                                <br><a href="topic.cgi?forum=67&amp;topic=3051&amp;glp#lt">Выбор HDD/SSD диска (#5)</a></td>
+                            </tr>
+
+
+                            <tr class="ft-title">
+                                <td colspan="5"><b><span>»</span> <a href="board.cgi?catplace=2"><span>Интернет</span></a></b></td></tr>                        
+                            <tr class="ft-str">
+                            <td><span class="big"><b><a href="forum.cgi?forum=31">Web-программирование</a></b></span>
+                                <br>Perl, PHP, JavaScript, HTML и другие языки под веб.</td>
+                            <td>217386</td>
+                            <td>38478</td>
+                            <td><a href="profile.cgi?action=show&amp;member=Cheery">Cheery</a></td>
+                            <td>Дата: <b>30-03-2023</b>
+                                <br>Время: <b>10:02</b>
+                                <br>Автор:<a href="profile.cgi?action=show&amp;member=Mavrikii">Mavrikii</a> 
+                                <br><a href="topic.cgi?forum=31&amp;topic=4448&amp;glp#lt">Основы PHP...</a></td>
+                            </tr>
+                            <tr class="ft-str">
+                            <td><span class="big"><b><a href="forum.cgi?forum=24">В помощь вебмастеру</a></b></span>
+                                <br>Раскрутка, скрипты, инструментарий и все, что нужно для сайта.</td>
+                            <td>125400</td>
+                            <td>20538</td>
+                            <td><a href="profile.cgi?action=show&amp;member=Cheery">Cheery</a></td>
+                            <td>Дата: <b>29-03-2023</b>
+                                <br>Время: <b>13:37</b>
+                                <br>Автор:<a href="profile.cgi?action=show&amp;member=maksnik777">maksnik777</a> 
+                                <br><a href="topic.cgi?forum=24&amp;topic=11763&amp;glp#lt">Нехватка памяти при пролистывании...</a></td>
+                            </tr>
+                            <tr class="ft-str">
+                            <td><span class="big"><b><a href="forum.cgi?forum=4">Графика</a></b></span>
+                                <br>Компьютерная графика и Web дизайн.</td>
+                            <td>142292</td>
+                            <td>9088</td>
+                            <td><a href="profile.cgi?action=show&amp;member=Ausw">Ausw</a></td>
+                            <td>Дата: <b>29-03-2023</b>
+                                <br>Время: <b>15:52</b>
+                                <br>Автор:<a href="profile.cgi?action=show&amp;member=mIshaa2005">mIshaa2005</a> 
+                                <br><a href="topic.cgi?forum=4&amp;topic=3391&amp;glp#lt">Распознавание шрифтов (Поиск по изо...</a></td>
+                            </tr>
+                            <tr class="ft-str">                       
+                            <td><span class="big"><b><a href="forum.cgi?forum=11">Хостинг</a></b></span>
+                                <br>Разговоры про хостинг: платный, бесплатный, и все, что с ним связано.</td>
+                            <td>156120</td>
+                            <td>10040</td>
+                            <td>
+                                <a href="profile.cgi?action=show&amp;member=3xp0">3xp0</a>, 
+                                <a href="profile.cgi?action=show&amp;member=PEDKA">PEDKA</a>
+                            </td>
+                            <td>Дата: <b>30-03-2023</b>
+                                <br>Время: <b>11:05</b>
+                                <br>Автор:<a href="profile.cgi?action=show&amp;member=LexVel">LexVel</a> 
+                                <br><a href="topic.cgi?forum=11&amp;topic=2055&amp;glp#lt">Тестирование и выбор бесплатной поч...</a></td>
+                            </tr>
+                            <tr class="ft-str">
+                            <td><span class="big"><b><a href="forum.cgi?forum=25">Зацените-ка!</a></b></span>
+                                <br>Кидаете ссылку на свой сайт и получаете отзывы, советы, порицания по дизайну, содержанию и т.д. и т.п.</td>
+                            <td>140280</td>
+                            <td>13366</td>
+                            <td>
+                                <a href="profile.cgi?action=show&amp;member=3xp0">3xp0</a>, 
+                                <a href="profile.cgi?action=show&amp;member=Ausw">Ausw</a>
+                            </td>
+                            <td>Дата: <b>29-03-2023</b>
+                                <br>Время: <b>08:27</b>
+                                <br>Автор:<a href="profile.cgi?action=show&amp;member=Ermolov77">Ermolov77</a> 
+                                <br><a href="topic.cgi?forum=25&amp;topic=7177&amp;glp#lt">Сайт по подарочным книгам - дайте...</a></td>
+                            </tr>
+
+
+                            <tr class="ft-title">
+                                <td colspan="5"><b><span>»</span> <a href="board.cgi?catplace=4"><span>Тематические</span></a></b></td>
+                            </tr>                     
+                            <tr class="ft-str">
+                            <td><span class="big"><b><a href="board.cgi?catplace=8">IkonBoard и другие форумы</a></b></span>
+                                <br>Лучшие бесплатные движки вебконференций для вашего сайта.
+                                <br>Поставьте себе форум! Мы поможем! (<a href="forum.cgi?forum=active8">Активные темы</a>)
+                                <br>Включает форумы: 
+                                <a href="forum.cgi?forum=21">IkonBoard 2</a>, 
+                                <a href="forum.cgi?forum=23">IkonBoard 3</a>, 
+                                <a href="forum.cgi?forum=26">Invision Board</a>, 
+                                <a href="forum.cgi?forum=22">Другие форумы</a>.</td>
+                            <td>78684</td>
+                            <td>10952</td>
+                            <td>
+                                <a href="profile.cgi?action=show&amp;member=Antuan">Antuan</a>, 
+                                <a href="profile.cgi?action=show&amp;member=Dekker">Dekker</a>
+                            </td>
+                            <td>Дата: <b>03-12-2022</b>
+                                <br>Время: <b>07:21</b>
+                                <br>Автор:<a href="profile.cgi?action=show&amp;member=Mavrikii">Mavrikii</a> 
+                                <br><a href="topic.cgi?forum=22&amp;topic=0854&amp;glp#lt">Discourse</a></td>
+                            </tr>
+                            <tr class="ft-str">
+                            <td><span class="big"><b><a href="forum.cgi?forum=28">Системы управления сайтами</a></b></span>
+                                <br>Коммерческие и open-source CMS. Построй свой сайт просто и быстро.</td>
+                            <td>77138</td><td>7698</td><td><a href="profile.cgi?action=show&amp;member=Antuan">Antuan</a></td>
+                            <td>Дата: <b>07-03-2023</b>
+                                <br>Время: <b>23:00</b>
+                                <br>Автор:<a href="profile.cgi?action=show&amp;member=Ermolov77">Ermolov77</a> 
+                                <br><a href="topic.cgi?forum=28&amp;topic=3949&amp;glp#lt">CMS для интернет магазина</a></td>
+                            </tr>
+                            <tr class="ft-str">
+                            <td><span class="big"><b><a href="forum.cgi?forum=6">Мобила</a></b></span>
+                                <br>Обсуждение мобильных средств связи.</td>
+                            <td>266106</td>
+                            <td>14434</td>
+                            <td>
+                                <a href="profile.cgi?action=show&amp;member=3xp0">3xp0</a>, 
+                                <a href="profile.cgi?action=show&amp;member=ZlydenGL">ZlydenGL</a>
+                            </td>
+                            <td>Дата: <b>30-03-2023</b>
+                                <br>Время: <b>11:26</b>
+                                <br>Автор:<a href="profile.cgi?action=show&amp;member=alloledd">alloledd</a> 
+                                <br><a href="topic.cgi?forum=6&amp;topic=7760&amp;glp#lt">Мобильный флейм (часть 2)</a></td>
+                            </tr>
+
+
+                            <tr class="ft-title"><td colspan="5"><b><span>»</span> <a href="board.cgi?catplace=1"><span>Общие</span></a></b></td></tr>                           
+                            <tr class="ft-str">
+                            <td><span class="big"><b><a href="forum.cgi?forum=29">Флейм</a></b></span>
+                                <br>Свобода слова! Разговаривать можно о чем угодно.
+                                <br><a href="forum.cgi?forum=9">Темы по региональным встречам</a></td>
+                            <td>1860080</td>
+                            <td>30528</td><td>
+                                <a href="profile.cgi?action=show&amp;member=3xp0">3xp0</a>, 
+                                <a href="profile.cgi?action=show&amp;member=TechSup">TechSup</a>
+                            </td>
+                            <td>Дата: <b>30-03-2023</b>
+                                <br>Время: <b>13:48</b>
+                                <br>Автор:<a href="profile.cgi?action=show&amp;member=Samovarov">Samovarov</a> 
+                                <br><a href="topic.cgi?forum=29&amp;topic=16184&amp;glp#lt">Тема о современной Украине. Часть...</a></td>
+                            </tr>
+                            <tr class="ft-str">
+                            <td><span class="big"><b><a href="board.cgi?catplace=12">Спорт</a></b></span>
+                                <br>Все о спорте. (<a href="forum.cgi?forum=active12">Активные темы</a>)
+                                <br>Включает форумы: 
+                                <a href="forum.cgi?forum=40">Общий форум</a>, 
+                                <a href="forum.cgi?forum=42">Футбол</a>, 
+                                <a href="forum.cgi?forum=86">Ru.Board Прогноз</a>, 
+                                <a href="forum.cgi?forum=43">Шахматы</a>.
+                            </td>
+                            <td>1227370</td>
+                            <td>20892</td>
+                            <td>
+                                <a href="profile.cgi?action=show&amp;member=Bunker">Bunker</a>, 
+                                <a href="profile.cgi?action=show&amp;member=Cossack">Cossack</a>, 
+                                <a href="profile.cgi?action=show&amp;member=Antuan">Antuan</a>
+                            </td>
+                            <td>Дата: <b>30-03-2023</b>
+                                <br>Время: <b>11:36</b>
+                                <br>Автор:<a href="profile.cgi?action=show&amp;member=fomatalex">fomatalex</a> 
+                                <br><a href="topic.cgi?forum=86&amp;topic=9840&amp;glp#lt">Российская премьер-лига. Сезон 22/2...</a></td>
+                            </tr>
+                            <tr class="ft-str">
+                            <td><span class="big"><b><a href="forum.cgi?forum=1">Музыка и Кино</a></b></span>
+                                <br>Мы это слушаем, мы это смотрим! Обсуждаем, обмениваемся мнениями, критикуем, советуем.</td>
+                            <td>563578</td>
+                            <td>18730</td>
+                            <td>
+                                <a href="profile.cgi?action=show&amp;member=PrincesskaMarishka">PrincesskaMarishka</a>, 
+                                <a href="profile.cgi?action=show&amp;member=ULer">ULer</a>
+                            </td>
+                            <td>Дата: <b>30-03-2023</b>
+                                <br>Время: <b>12:40</b>
+                                <br>Автор:<a href="profile.cgi?action=show&amp;member=Avengerr">Avengerr</a> 
+                                <br><a href="topic.cgi?forum=1&amp;topic=8959&amp;glp#lt">Последний фильм</a></td>
+                            </tr>
+                            <tr class="ft-str">
+                            <td><span class="big"><b><a href="forum.cgi?forum=3">Юмор</a></b></span>
+                                <br>Юмор, сатира, приколы.</td>
+                            <td>177204</td><td>8762</td><td><a href="profile.cgi?action=show&amp;member=Dekker">Dekker</a></td>
+                            <td>Дата: <b>30-03-2023</b>
+                                <br>Время: <b>12:59</b>
+                                <br>Автор:<a href="profile.cgi?action=show&amp;member=moroka33">moroka33</a> 
+                                <br><a href="topic.cgi?forum=3&amp;topic=4926&amp;glp#lt">Прикольные картинки -=5=-</a></td>
+                            </tr>
+                            <tr class="ft-str">
+                            <td><span class="big"><b><a href="forum.cgi?forum=41">Художественная Литература</a></b></span></td>
+                            <td>235158</td><td>4322</td><td><a href="profile.cgi?action=show&amp;member=Fair">Fair</a></td>
+                            <td>Дата: <b>30-03-2023</b>
+                                <br>Время: <b>02:37</b>
+                                <br>Автор:<a href="profile.cgi?action=show&amp;member=insorg">insorg</a> 
+                                <br><a href="topic.cgi?forum=41&amp;topic=2313&amp;glp#lt">Избранное</a></td>
+                            </tr>
+
+
+                            <tr class="ft-title"><td colspan="5"><b><span>»</span> <a href="board.cgi?catplace=5"><span>Ru.Board</span></a></b></td></tr>
+                            <tr class="ft-str">
+                            <td><span class="big"><b><a href="forum.cgi?forum=13">Общие вопросы по Ru.Board</a></b></span>
+                                <br>Проблемы, технические вопросы, предложения, как по форуму, так и по сайту в целом.</td>
+                            <td>177860</td>
+                            <td>6822</td><td>
+                                <a href="profile.cgi?action=show&amp;member=batva">batva</a>, 
+                                <a href="profile.cgi?action=show&amp;member=DimoN">DimoN</a>
+                            </td>
+                            <td>Дата: <b>30-03-2023</b>
+                                <br>Время: <b>13:22</b>
+                                <br>Автор:<a href="profile.cgi?action=show&amp;member=newhk">newhk</a> 
+                                <br><a href="topic.cgi?forum=13&amp;topic=1502&amp;glp#lt">Запрос на удаление аккаунта</a></td>
+                            </tr>
+
+
+                            <tr class="ft-title"><td colspan="5"><b><span>»</span> <a href="board.cgi?catplace=6"><span>Андеграунд</span></a></b></td></tr>                        
+                            <tr class="ft-str">
+                            <td><span class="big"><b><a href="forum.cgi?forum=93">eBookz</a></b></span>
+                                <br>Техническая, компьютерная, научная и обучающая литература в электронном виде. Вопросы сканирования и распространения. Обсуждение книг.</td>
+                            <td>801118</td>
+                            <td>7802</td><td>
+                                <a href="profile.cgi?action=show&amp;member=kvk">kvk</a>, 
+                                <a href="profile.cgi?action=show&amp;member=albel">albel</a>
+                            </td>
+                            <td>Дата: <b>30-03-2023</b>
+                                <br>Время: <b>13:49</b>
+                                <br>Автор:<a href="profile.cgi?action=show&amp;member=r450">r450</a> 
+                                <br><a href="topic.cgi?forum=93&amp;topic=3904&amp;glp#lt">Научные электронные журналы. Научно...</a></td>
+                            </tr>
+                            <tr class="ft-str">
+                            <td><span class="big"><b><a href="forum.cgi?forum=35">Варезник</a></b></span>
+                                <br>Вы что-то ищете? Вам сюда. Объявления о поиске программного обеспечения и все находки в этом форуме.
+                                <br>Подарки от вендоров, специальные акции, а также прочие раздачи программного обеспечения и ключей: <b><a href="forum.cgi?forum=38">Раздачи и акции</a></b> (<span><b>New!</b></span>)</td>
+                            <td>7222652</td>
+                            <td>109396</td><td>
+                                <a href="profile.cgi?action=show&amp;member=Larry">Larry</a>, 
+                                <a href="profile.cgi?action=show&amp;member=A1eksandr1">A1eksandr1</a>
+                            </td>
+                            <td>Дата: <b>30-03-2023</b>
+                                <br>Время: <b>13:48</b>
+                                <br>Автор:<a href="profile.cgi?action=show&amp;member=Evlaster">Evlaster</a> 
+                                <br><a href="topic.cgi?forum=35&amp;topic=82129&amp;glp#lt">Аптека для платформ/конфигураций/ко...</a></td>
+                            </tr>
+                            <tr class="ft-str">
+                            <td><span class="big"><b><a href="forum.cgi?forum=20">Мобильный варезник</a></b></span>
+                                <br>Теперь и мобильный! <span><b>New!</b></span>
+                                <br>Android, iOS, Windows Phone и другие платформы. Поиск программного обеспечения и игр для мобильных устройств в этом разделе.</td>
+                            <td>10388</td><td>171</td><td><a href="profile.cgi?action=show&amp;member=ZlydenGL">ZlydenGL</a></td>
+                            <td>Дата: <b>29-03-2023</b>
+                                <br>Время: <b>14:56</b>
+                                <br>Автор:<a href="profile.cgi?action=show&amp;member=Snou1986">Snou1986</a> 
+                                <br><a href="topic.cgi?forum=20&amp;topic=0006&amp;glp#lt">Варез по Android-app's</a></td>
+                            </tr>
+                            <tr class="ft-str">
+                            <td><span class="big"><b><a href="forum.cgi?forum=55">Андеграунд</a></b></span>
+                                <br>Общие разговоры. Взлом и защита. Хак, трояны, вирусы и все остальное в мире андеграунда обсуждаем тут.</td>
+                            <td>1291320</td>
+                            <td>25650</td>
+                            <td>
+                                <a href="profile.cgi?action=show&amp;member=emx">emx</a>, 
+                                <a href="profile.cgi?action=show&amp;member=AlexDAT">AlexDAT</a>
+                            </td>
+                            <td>Дата: <b>30-03-2023</b>
+                                <br>Время: <b>13:51</b>
+                                <br>Автор:<a href="profile.cgi?action=show&amp;member=esys">esys</a> 
+                                <br><a href="topic.cgi?forum=55&amp;topic=9694&amp;glp#lt">Самостоятельная сборка дистрибутиво...</a></td>
+                            </tr>
+                            <tr class="ft-str">
+                            <td><span class="big"><b><a href="forum.cgi?forum=51">Игры и Фильмы</a></b></span>
+                                <br>Поиск игр и видеофильмов. Здесь только поиск, а обсуждение в соответствующих форумах: 
+                                <a href="board.cgi?catplace=14">Игры</a>, 
+                                <a href="forum.cgi?forum=1">Фильмы</a>.
+                                <br><a href="forum.cgi?forum=75">Поиск небольших интересных игр</a>.</td>
+                            <td>390606</td>
+                            <td>19496</td>
+                            <td>
+                                <a href="profile.cgi?action=show&amp;member=RapSoldier">RapSoldier</a>, 
+                                <a href="profile.cgi?action=show&amp;member=VdV">VdV</a>
+                            </td>
+                            <td>Дата: <b>26-03-2023</b>
+                                <br>Время: <b>13:25</b>
+                                <br>Автор:<a href="profile.cgi?action=show&amp;member=kaao">kaao</a> 
+                                <br><a href="topic.cgi?forum=51&amp;topic=10187&amp;glp#lt">Фильмы (kaao)</a></td>
+                            </tr>
+
+
+                            <tr class="ft-title"><td colspan="5"><b><span>»</span> <a href="board.cgi?catplace=7"><span>Специальные</span></a></b></td></tr>                        
+                            <tr class="ft-str">
+                            <td><span class="big"><b><a href="forum.cgi?forum=2">Тестирование</a></b></span>
+                                <br>Тут и только тут можно и нужно тестировать скрипт этого форума, проверять свои подписи, лого, тренироваться и учиться правильно использовать IB коды и смайлики и т.д.</td>
+                            <td>1628100</td>
+                            <td>11620</td>
+                            <td>
+                                <a href="profile.cgi?action=show&amp;member=3xp0">3xp0</a>, 
+                                <a href="profile.cgi?action=show&amp;member=PEDKA">PEDKA</a>
+                            </td>
+                            <td>Дата: <b>30-03-2023</b>
+                                <br>Время: <b>13:36</b>
+                                <br>Автор:<a href="profile.cgi?action=show&amp;member=ziabriev">ziabriev</a> 
+                                <br><a href="topic.cgi?forum=2&amp;topic=3767&amp;glp#lt">Сборки Total Commander (часть 2)</a></td>
+                            </tr>
+                            <tr class="ft-str">
+                            <td><span class="big"><b><a href="board.cgi?catplace=10">Блоги</a></b></span>
+                                <br>Тестирование</td>
+                            <td>8852</td><td>442</td><td><a href="profile.cgi?action=show&amp;member=articlebot">articlebot</a></td>
+                            <td>Дата: <b>25-02-2023</b>
+                                <br>Время: <b>12:47</b>
+                                <br>Автор:<a href="profile.cgi?action=show&amp;member=DevOpsEngineer">DevOpsEngineer</a> 
+                                <br><a href="topic.cgi?forum=107&amp;topic=0022&amp;glp#lt">Два одновременных сеанса в Windows ...</a></td>
+                            </tr>
+
+
+                            <tr class="ft-footer">
+                                <td colspan="5">
+                                    <table>
+                                        <tbody>
+                                            <tr class="ft-footer-head">
+                                                <td class="onl">Всего в on-line: <b>1396</b>. Гостей: 789. Постояльцев: 607.</td>
+                                                <td class="onl" >Рекорд посещаемости <b>6181</b> человек установлен <b>03-12-2013 16:18</b>.</td>
+                                            </tr>
+                                            
+                                            <tr class="ft-footer-body">
+                                                <td class="onl" colspan="2">» 
+                                                    <a href="profile.cgi?action=show&amp;member=Ulisss">Ulisss </a>» 
+                                                    <a href="profile.cgi?action=show&amp;member=MERCURY127">MERCURY127 </a>» 
+                                                    <a href="profile.cgi?action=show&amp;member=RdMax">RdMax </a>» 
+                                                    <a href="profile.cgi?action=show&amp;member=Victor571">Victor571 </a>» 
+                                                    <a href="profile.cgi?action=show&amp;member=IFkO">IFkO </a>» 
+                                                    <a href="profile.cgi?action=show&amp;member=airat_k">airat_k </a>» 
+                                                    <a href="profile.cgi?action=show&amp;member=Collapse">Collapse</a>» 
+                                                    <a href="profile.cgi?action=show&amp;member=Anton_job82">Anton_job82 </a>» 
+                                                    <a href="profile.cgi?action=show&amp;member=mickkoldunov">mickkoldunov </a>» 
+                                                    <a href="profile.cgi?action=show&amp;member=notinthewoods">notinthewoods </a>» 
+                                                    <a href="profile.cgi?action=show&amp;member=Samovarov">Samovarov </a>» 
+                                                    <a href="profile.cgi?action=show&amp;member=tc1225rub">tc1225rub </a>» 
+                                                    <a href="profile.cgi?action=show&amp;member=Froelich">Froelich </a>» 
+                                                    <a href="profile.cgi?action=show&amp;member=alexandrll">alexandrll </a>» 
+                                                    <a href="profile.cgi?action=show&amp;member=dasty389">dasty389 </a>» 
+                                                    <a href="profile.cgi?action=show&amp;member=ros33">ros33 </a>» 
+                                                    <a href="profile.cgi?action=show&amp;member=abysshint">abysshint </a>» 
+                                                    <a href="profile.cgi?action=show&amp;member=BukaDimkaSuka">BukaDimkaSuka </a>» 
+                                                    <a href="profile.cgi?action=show&amp;member=slavan">slavan </a>» 
+                                                    <a href="profile.cgi?action=show&amp;member=Yadyuha">Yadyuha </a>» 
+                                                    <a href="profile.cgi?action=show&amp;member=Torneo75">Torneo75 </a>» 
+                                                    <a href="profile.cgi?action=show&amp;member=freebg">freebg </a>» 
+                                                    <a href="profile.cgi?action=show&amp;member=kenko2">kenko2 </a>» 
+                                                    <a href="profile.cgi?action=show&amp;member=KLASS">KLASS </a>» 
+                                                    <a href="profile.cgi?action=show&amp;member=VVoronin">VVoronin </a>» 
+                                                    <a href="profile.cgi?action=show&amp;member=vitalcat">vitalcat </a>» 
+                                                    <a href="profile.cgi?action=show&amp;member=stea">stea </a>» 
+                                                    <a href="profile.cgi?action=show&amp;member=ImReady">ImReady </a>» 
+                                                    <a href="profile.cgi?action=show&amp;member=iks_man">iks_man </a>» 
+                                                    <a href="profile.cgi?action=show&amp;member=pangasiys">pangasiys </a>» 
+                                                    <a href="profile.cgi?action=show&amp;member=ZVVVSL">ZVVVSL </a>» 
+                                                    <a href="profile.cgi?action=show&amp;member=Vid1">Vid1 </a>» 
+                                                    <a href="profile.cgi?action=show&amp;member=al1961">al1961 </a>» 
+                                                    <a href="profile.cgi?action=show&amp;member=vpustite">vpustite </a>» 
+                                                    <a href="profile.cgi?action=show&amp;member=cyc">cyc </a>» 
+                                                    <a href="profile.cgi?action=show&amp;member=Karbid87">Karbid87 </a>» 
+                                                    <a href="profile.cgi?action=show&amp;member=UncleFeoDoR">UncleFeoDoR </a>» 
+                                                    <a href="profile.cgi?action=show&amp;member=FAndry">FAndry </a>» 
+                                                    <a href="profile.cgi?action=show&amp;member=Sergey005">Sergey005 </a>» 
+                                                    <a href="profile.cgi?action=show&amp;member=VinChun">VinChun </a>» 
+                                                    <a href="profile.cgi?action=show&amp;member=aleksvolgin">aleksvolgin </a> &nbsp;&nbsp;
+                                                    <a href="whosonline.cgi">[ Смотреть весь список ]</a>.
+                                                </td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </td>
+                                
+                            </tr>
+                        
+                        </tbody>
+                    </table>
+                </div>
+                
+                
+            </div>
+            <div class="forum-stat">
+
+            </div>
+        </div>
+    </div>
+    <footer>
+        <div class="container wide-c">
+            <div class="row wide-c">
+                <div class="center-block col-md-6">
+                    <p class="social-title">Предлагаем также ознакомиться с нашими группами в ВК</p>
+                    <a href="https://vk.com/club199867942" class="around-block vk-block"><img src="../../images/vk.svg" alt="" class="vk">Материалы для ознакомления</a>
+                    <a href="https://vk.com/club203133993" class="around-block vk-block"><img src="../../images/vk.svg" alt="" class="vk">Моя личная Библиотека</a>
+                    <a href="https://vk.com/club203135453" class="around-block vk-block"><img src="../../images/vk.svg" alt="" class="vk">Математическая база</a>
+                </div>
+                <div class="center-flex col-md-6">
+                    <p class="center">Контрольная работа по дисциплине "Веб-Технологии" <br>Выполнил студент группы ЗЦИС-27 <br>Филиппов И.А</p>
+                </div>
+            </div>
+        </div>
+    </footer> 
+    <div class="modal fade" id="staticBackdrop" data-backdrop="static" data-keyboard="false" tabindex="-1" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+            <div class="modal-content mf">
+                <div class="modal-header mf-header">
+                    <button class="tablinks ah-link ah-hover tab-active" onclick="openTab(event, 'autorization')">Вход</button>
+                    <button class="tablinks ah-link ah-hover" onclick="openTab(event, 'registration')">Регистрация</button>
+                    <div class="mf-header-space"></div>
+                    <button type="button" class="close ah-link ah-hover center-flex" data-dismiss="modal" aria-label="Close">
+                        <i class="bi bi-x-lg"></i>
+                    </button>
+                </div>
+                <div id="autorization" class="tabcontent">
+                    <div class="modal-body mf-body">
+                        <p class="mf-title">Вход через социальные сети</p>
+                        <div class="social-sign-wrap center-flex">
+                            <div class="row social-sign">
+                                <div class="col ss-button-wrap l"><a href="" class="col ss-button center-flex ss-fb"><i class="fa fa-facebook"></i></a></div>
+                                <div class="col ss-button-wrap"><a href="" class="col ss-button center-flex ss-tw"><i class="fa fa-twitter"></i></a></div>
+                                <div class="col ss-button-wrap"><a href="" class="col ss-button center-flex ss-gg"><i class="fa fa-google-plus"></i></a></div>
+                                <div class="col ss-button-wrap r"><a href="" class="col ss-button center-flex ss-vk"><i class="fa fa-vk"></i></a></div>
+                            </div>
+                        </div>
+                        <p class="mf-title">Вход через никнейм или email</p>
+                        <p class="bad-pass off-display">Неверный логин или пароль</p>
+                        <form method="post" class="form-login">
+                            <div class="input-wrap">
+                                <i class="fa fa-user input-icon"></i>
+                                <input type="text" name="email" value="" class="form-input log-login" placeholder="Никнейм или email" required="">
+                            </div>                               
+                            <div class="input-wrap">
+                                <i class="fa fa-lock input-icon"></i>
+                                <input type="password" name="password" class="form-input log-pass" placeholder="Пароль" required="">
+                            </div>        
+                            <div class="input-wrap">
+                                <div class="form-check">
+                                    <input class="form-check-input custom-input" type="checkbox" value="" id="rememberMe" checked>
+                                    <label class="form-check-label" for="rememberMe">
+                                        Запомнить меня
+                                    </label>
+                                </div>
+                            </div>                        
+                            <div class="modal-footer mf-footer">
+                                <button type="submit" class="submit-form btn btn-primary">Войти</button>
+                            </div>                           
+                        </form>
+                    </div>
+                </div>
+                <div id="registration" class="tabcontent">
+                    <div class="modal-body mf-body">
+                        <p class="mf-title">Регистрация через социальные сети</p>
+                        <div class="social-sign-wrap center-flex">
+                            <div class="row social-sign">
+                                <div class="col ss-button-wrap l"><a href="" class="col ss-button center-flex ss-fb"><i class="fa fa-facebook"></i></a></div>
+                                <div class="col ss-button-wrap"><a href="" class="col ss-button center-flex ss-tw"><i class="fa fa-twitter"></i></a></div>
+                                <div class="col ss-button-wrap"><a href="" class="col ss-button center-flex ss-gg"><i class="fa fa-google-plus"></i></a></div>
+                                <div class="col ss-button-wrap r"><a href="" class="col ss-button center-flex ss-vk"><i class="fa fa-vk"></i></a></div>
+                            </div>
+                        </div>
+                        <p class="mf-title">Регистрация через сайт</p>
+                        <form method="post" class="mf-form">
+                            <p class="reg-note">Выберите себе имя, которое будет отображаться в вашем профиле на сайте:</p>
+                            <div class="input-wrap iw-note">
+                                <i class="fa fa-user input-icon"></i>
+                                <input type="text" name="login" value="" class="form-input reg-name" placeholder="Никнейм" required="">            
+                            </div>
+                            <p class="reg-note">Привяжите адрес электронной почты</p>
+                            <div class="input-wrap iw-note">
+                                <i class="bi bi-envelope-at-fill input-icon"></i>
+                                <input type="text" name="email" value="" class="form-input reg-mail" placeholder="Email" pattern="[\w\.-]+@[\w\.-]+\.\w+" required="">                       
+                            </div>
+                            <p class="reg-note">Придумайте достаточно сложный пароль:</p> 
+                            <div id="valid-block" class="pass-note">
+                                <p>Пароль должен содержать следующее:</p>
+                                <p id="valid-letter" class="invalid">Нижний регистр буква</p>
+                                <p id="valid-capital" class="invalid">Заглавная (прописная) буква</p>
+                                <p id="valid-number" class="invalid">Число</p>
+                                <p id="valid-length" class="invalid">Минимум 8 символов</p>
+                            </div>                              
+                            <div class="input-wrap iw-note">
+                                <i class="fa fa-lock input-icon"></i>
+                                <input type="password" name="pass1" class="form-input reg-pass1" pattern="(?=.*\d)(?=.*[a-zа-я])(?=.*[A-ZА-Я]).{8,}" placeholder="Пароль" required="">                         
+                            </div> 
+                            <p class="reg-note">Повторите пароль:</p>
+                            <p id="pass-mismatch" class="reg-note invalid">Пароли не совпадают!</p>
+                            <p id="pass-match" class="reg-note valid">Пароли совпадают!</p>
+                            <div class="input-wrap iw-note">
+                                <i class="fa fa-lock input-icon"></i>
+                                <input type="password" name="pass2" class="form-input reg-pass2" placeholder="Повторите пароль" required="">                     
+                            </div>        
+                            <div class="input-wrap">
+                                <div class="form-check">
+                                    <input class="form-check-input custom-input" type="checkbox" value="" id="acceptRules" checked required="">
+                                    <span class="reg-note">Нажимая «Далее», Вы соглашаетесь с </span><a href="../reglament.html" class="span-link reg-note">регламентом</a><span class="reg-note"> и </span><a href="../politic.html" class="span-link reg-note">политикой конфиденциальности</a>                                                             
+                                </div>
+                            </div>                        
+                            <div class="modal-footer mf-footer">
+                                <button type="submit" class="submit-form btn btn-primary">Отправить</button>
+                            </div>                           
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="https://kit.fontawesome.com/60a957becd.js" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.3.1/js/bootstrap.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js"  crossorigin="anonymous"></script>
+    <script src="../js/after-header.js"></script>
+    <script src="../js/mf.js"></script>
+    <script src="../js/theme.js"></script>
+    <script src="../js/login.js"></script>
+    <script src="../js/valid.js"></script>
+    <script src="../js/onload.js"></script>
+    <script src="../js/forum-content.js"></script>
+</body>
+</html>

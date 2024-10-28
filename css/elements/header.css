@@ -1,0 +1,45 @@
+header {
+    color:var(--color-text);
+    height: 400px;
+    z-index:12;
+    position: relative;
+    /* background: url(./../../images/header.jpg) center; */
+    background-size: contain;
+}
+
+header h1 {
+    text-transform: uppercase;
+    text-align: center;
+}
+
+.header-button-group {
+    display: flex;
+}
+
+.header-btn {
+    height:59px;
+    background-color: var(--color-glace);
+    display: flex;
+    border: 5px solid var(--color-header-btn-border);
+    padding: 15px;
+    text-transform: uppercase;
+    transition: all .3s ease;
+    color: var(--color-text);
+}
+
+.header-btn .fa-house {
+    font-size:19px;
+}
+
+.header-btn:hover {
+    background-color: var(--color-header-btn-border);
+    color: var(--color-text);
+}
+
+.home-icon {
+    margin-right:15px;
+}
+
+.header-row {
+    height:100%;
+}

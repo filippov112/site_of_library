@@ -1,0 +1,41 @@
+.center {
+    text-align:center;
+}
+
+.center-flex {
+    display: flex;
+    align-items: center;
+    justify-content: center; 
+}
+
+.center-block {
+    text-align: center;
+    align-self: center;
+}
+
+.b {
+    font-weight:bold;
+}
+
+.off-display {
+    display: none;
+}
+
+.on-display {
+    display:inherit;
+}
+
+.invalid {
+    color: red;
+}
+.valid {
+    color: green;
+}
+* {
+    font-family: -apple-system,BlinkMacSystemFont,Open Sans,Roboto,Helvetica Neue,Helvetica,sans-serif;
+    color:var(--color-text);
+}
+
+a {
+    text-decoration: none;
+}

@@ -1,0 +1,459 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Филипедия. Видео курсы</title>
+    <link rel="shortcut icon" href="../images/favicon.svg" type="image/x-icon">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/all.css">
+</head>
+<body>
+    <div id="after-header">
+        <div class="ah-bg"></div>
+        <div class="container wide-c" id="ah-wrap">
+            <button id="ah-icon" class="ah-link ah-hover center-flex">
+                &#9776;
+            </button>
+            <div id="ah-rollable" class="ah-deployed">   
+                <a href="books.html" class="ah-link ah-hover center-flex">Книжный каталог</a> 
+                <div class="ah-link active-module center-flex">Видео курсы</div>
+                <a href="forum.html" class="ah-link ah-hover center-flex">Форум</a>
+                <a href="new_articles.html" class="ah-link ah-hover center-flex">Добавить статью</a>
+            </div>
+            <form action="/search" method="get" class="search">
+                <input type="search" autocomplete="on | off" class="search-input">
+            </form>
+            <div class="center-flex ah-link ah-hover theme-wrap">
+                <button type="button" data-toggle="modal" class="mini-lk-button" data-target="#staticBackdrop">
+                    <i class="fa-solid fa-house home-icon"></i>
+                </button>
+            </div>
+            <div class="center-flex theme-wrap">
+                <div class="form-check form-switch">
+                    <input class="form-check-input theme-switch" type="checkbox" id="flexSwitchCheckDefault">
+                    <div class="theme-switch-label bi bi-sun-fill"></div>
+                </div>
+            </div>
+        </div>
+        <div id="ah-responsive">
+            <a href="books.html" class="ah-link ah-hover center-flex">Книжный каталог</a> 
+            <div class="ah-link active-module center-flex">Видео курсы</div>
+            <a href="forum.html" class="ah-link ah-hover center-flex">Форум</a>
+            <a href="new_articles.html" class="ah-link ah-hover center-flex">Добавить статью</a>
+        </div>
+        <div class="breadcrumb">
+            <ul class="bread container wide-c">
+                <li><a href="/">/</a></li>
+                <li><i class="bi bi-chevron-right"></i></li>
+                <li>Видео курсы</li>
+            </ul>
+        </div>
+        <div id="videos-filter">
+            <button id="show-videos-filter">Выберите тематику</button>
+            <div id="vf-block">
+                <div id="vf-block-wrap">
+                    <div class="vf-categories-block">
+                        <div class="filter-cat ">Python</div>
+                        <div class="filter-cat ">C#</div>
+                        <div class="filter-cat ">C++</div>
+                        <div class="filter-cat ">Java</div>
+                        <div class="filter-cat ">JavaScript</div>
+                        <div class="filter-cat ">HTML/CSS</div>
+                        <div class="filter-cat ">Kotlin</div>
+                        <div class="filter-cat ">Linux</div>
+                        <div class="filter-cat ">Docker</div>
+                        <div class="filter-cat ">Ruby</div>
+                    </div>
+                    <button type="submit" id="v-apply-filter" class="submit-form btn btn-primary">Применить фильтр</button>
+                    <button type="submit" id="v-reset-filter" class="submit-form btn btn-primary">Сбросить фильтр</button>
+                </div> 
+            </div>
+        </div>
+    </div>
+    <div class="main-container container wide-c">
+        <div id="videos-content">
+            <div class="videos-card">
+                <div class="videos-card-title">
+                    Язык HTML для новичков
+                </div>
+                <div class="videos-carusel-wrap">
+                    <div id="vc-1" class="videos-carusel">
+                        <div class="videos-frame-mini-wrap">
+                            <iframe id="vf1-1" class="videos-mini-frame" src="https://www.youtube.com/embed/SWyNomjuEZA" title="Установка браузера и редактора кода, Урок 1" allow="accelerometer;clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" ></iframe>
+                            <button id="vb1-1" class="vmf-click"></button>
+                        </div>
+                        <div class="videos-frame-mini-wrap">
+                            <iframe id="vf1-2" class="videos-mini-frame" src="https://www.youtube.com/embed/CAVoGl7bxCI" title="Cоздание первого проекта в редакторе VS Code и настройка редактора, Урок 2" allow="accelerometer;clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" ></iframe>
+                            <button id="vb1-2" class="vmf-click"></button>
+                        </div>
+                        <div class="videos-frame-mini-wrap">
+                            <iframe id="vf1-3" class="videos-mini-frame" src="https://www.youtube.com/embed/-w2jBN5Yw94" title="Учим первые HTML теги и рассматриваем как устроена HTML страница, Урок 3" allow="accelerometer;clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" ></iframe>
+                            <button id="vb1-3" class="vmf-click"></button>
+                        </div>
+                        <div class="videos-frame-mini-wrap">
+                            <iframe id="vf1-4" class="videos-mini-frame" src="https://www.youtube.com/embed/goMNbCP0szk" title="Как задавать путь к файлу на HTML, новые HTML теги и задание, Урок 4" allow="accelerometer;clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" ></iframe>
+                            <button id="vb1-4" class="vmf-click"></button>
+                        </div>
+                        <div class="videos-frame-mini-wrap">
+                            <iframe id="vf1-5" class="videos-mini-frame" src="https://www.youtube.com/embed/vgJXhim8sLM" title="Как создавать списки и гиперссылки на языке HTML, Урок 5" allow="accelerometer;clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" ></iframe>
+                            <button id="vb1-5" class="vmf-click"></button>
+                        </div>
+                        <div class="videos-frame-mini-wrap">
+                            <iframe id="vf1-6" class="videos-mini-frame" src="https://www.youtube.com/embed/MveZRm7L_50" title="Как создавать таблицы на HTML, новые теги и задание, Урок 6" allow="accelerometer;clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" ></iframe>
+                            <button id="vb1-6" class="vmf-click"></button>
+                        </div>
+                        <div class="videos-frame-mini-wrap">
+                            <iframe id="vf1-7" class="videos-mini-frame" src="https://www.youtube.com/embed/o_WX6UjdZu8" title="Блочные и строчные теги на HTML, работа с текстом на HTML, Урок 7" allow="accelerometer;clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" ></iframe>
+                            <button id="vb1-7" class="vmf-click"></button>
+                        </div>
+                        <div class="videos-frame-mini-wrap">
+                            <iframe id="vf1-8" class="videos-mini-frame" src="https://www.youtube.com/embed/K-m6WwQ35zo" title="Как создавать формы на HTML, новые теги и задание, Урок 8" allow="accelerometer;clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" ></iframe>
+                            <button id="vb1-8" class="vmf-click"></button>
+                        </div>
+                        <div class="videos-frame-mini-wrap">
+                            <iframe id="vf1-9" class="videos-mini-frame" src="https://www.youtube.com/embed/J3QJFTuuico" title="Универсальные атрибуты на HTML, идентификаторы и классы, Урок 9" allow="accelerometer;clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" ></iframe>
+                            <button id="vb1-9" class="vmf-click"></button>
+                        </div>
+                        <div class="videos-frame-mini-wrap">
+                            <iframe id="vf1-10" class="videos-mini-frame" src="https://www.youtube.com/embed/8kSM4zEyXCU" title="Цвет и Спецсимволы на HTML, таблица спецсимволов и RGB цвет, Урок 10" allow="accelerometer;clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" ></iframe>
+                            <button id="vb1-10" class="vmf-click"></button>
+                        </div>
+                    </div>
+                </div>
+                <div id="vsb-1" class="videos-show-block">
+                    <div class="vsb-wrap">
+                        <p id="vcvt-1" class="vsb-current-video-title"></p>
+                        <button id="vcbc-1" type="button" class="vsb-close" data-dismiss="modal" aria-label="Close">
+                            <i id="vcbi-1" class="bi bi-x-lg"></i>
+                        </button>
+                    </div>
+                    <iframe id="vff-1" class="videos-full-frame" title="" allow="accelerometer;clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" >
+                    </iframe>
+                </div>
+            </div>
+            <div class="videos-card">
+                <div class="videos-card-title">
+                    Язык CSS для новичков
+                </div>
+                <div class="videos-carusel-wrap">
+                    <div id="vc-2" class="videos-carusel">
+                        <div class="videos-frame-mini-wrap">
+                            <iframe id="vf2-1" class="videos-mini-frame" src="https://www.youtube.com/embed/cxvhHXGlUF0" title="CSS селекторы что это и как с ними работать, Урок 1" allow="accelerometer;clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" ></iframe>
+                            <button id="vb2-1" class="vmf-click"></button>
+                        </div>
+                        <div class="videos-frame-mini-wrap">
+                            <iframe id="vf2-2" class="videos-mini-frame" src="https://www.youtube.com/embed/AmuL14K-rTo" title="Как вставить картинку на CSS, Язык CSS для новичков, Урок 2" allow="accelerometer;clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" ></iframe>
+                            <button id="vb2-2" class="vmf-click"></button>
+                        </div>
+                        <div class="videos-frame-mini-wrap">
+                            <iframe id="vf2-3" class="videos-mini-frame" src="https://www.youtube.com/embed/bfAs8Kdt0T8" title="Границы и скругления на CSS, Свойство border и border radius, Урок 3" allow="accelerometer;clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" ></iframe>
+                            <button id="vb2-3" class="vmf-click"></button>
+                        </div>
+                        <div class="videos-frame-mini-wrap">
+                            <iframe id="vf2-4" class="videos-mini-frame" src="https://www.youtube.com/embed/0IVydsao6zc" title="Размеры элементов на CSS, Ширина и высота блока, Урок 4" allow="accelerometer;clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" ></iframe>
+                            <button id="vb2-4" class="vmf-click"></button>
+                        </div>
+                        <div class="videos-frame-mini-wrap">
+                            <iframe id="vf2-5" class="videos-mini-frame" src="https://www.youtube.com/embed/qeq4uHbRh_U" title="Работа с шрифтом и текстом на CSS, Язык CSS для новичков, Урок 5" allow="accelerometer;clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" ></iframe>
+                            <button id="vb2-5" class="vmf-click"></button>
+                        </div>
+                        <div class="videos-frame-mini-wrap">
+                            <iframe id="vf2-6" class="videos-mini-frame" src="https://www.youtube.com/embed/G41WQUN6U8U" title="Блочная модель документа на CSS, Язык CSS для новичков, Урок 6" allow="accelerometer;clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" ></iframe>
+                            <button id="vb2-6" class="vmf-click"></button>
+                        </div>
+                        <div class="videos-frame-mini-wrap">
+                            <iframe id="vf2-7" class="videos-mini-frame" src="https://www.youtube.com/embed/G37gg6Gjzn4" title="Псевдоклассы и псевдоэлементы на CSS, Язык CSS для новичков, Урок 7" allow="accelerometer;clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" ></iframe>
+                            <button id="vb2-7" class="vmf-click"></button>
+                        </div>
+                        <div class="videos-frame-mini-wrap">
+                            <iframe id="vf2-8" class="videos-mini-frame" src="https://www.youtube.com/embed/mHUdQKm2iKY" title="Flexbox на CSS и свойства для работы с флексами, Урок 8" allow="accelerometer;clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" ></iframe>
+                            <button id="vb2-8" class="vmf-click"></button>
+                        </div>
+                        <div class="videos-frame-mini-wrap">
+                            <iframe id="vf2-9" class="videos-mini-frame" src="https://www.youtube.com/embed/Nhf1Uni-Wn8" title="Создаем меню на HTML и CSS, практика + домашнее задание, Урок 9" allow="accelerometer;clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" ></iframe>
+                            <button id="vb2-9" class="vmf-click"></button>
+                        </div>
+                        <div class="videos-frame-mini-wrap">
+                            <iframe id="vf2-10" class="videos-mini-frame" src="https://www.youtube.com/embed/2_Q9LNld_f8" title="Верстаем на HTML и CSS, практика + домашнее задание, Урок 10" allow="accelerometer;clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" ></iframe>
+                            <button id="vb2-10" class="vmf-click"></button>
+                        </div>
+                        <div class="videos-frame-mini-wrap">
+                            <iframe id="vf2-11" class="videos-mini-frame" src="https://www.youtube.com/embed/MFl8m41uXSM" title="Текст с иконками на HTML и CSS, практика + домашнее задание, Урок 11" allow="accelerometer;clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" ></iframe>
+                            <button id="vb2-11" class="vmf-click"></button>
+                        </div>
+                        <div class="videos-frame-mini-wrap">
+                            <iframe id="vf2-12" class="videos-mini-frame" src="https://www.youtube.com/embed/b69Nef1I0DQ" title="Photoshop для верстки по макету, это должен ЗНАТЬ каждый, Урок 12" allow="accelerometer;clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" ></iframe>
+                            <button id="vb2-12" class="vmf-click"></button>
+                        </div>
+                        <div class="videos-frame-mini-wrap">
+                            <iframe id="vf2-13" class="videos-mini-frame" src="https://www.youtube.com/embed/IAXQitL1elE" title="Photoshop верстка по макету на HTML и CSS, Урок 13" allow="accelerometer;clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" ></iframe>
+                            <button id="vb2-13" class="vmf-click"></button>
+                        </div>
+                    </div>
+                </div>
+                <div id="vsb-2" class="videos-show-block">
+                    <div class="vsb-wrap">
+                        <p id="vcvt-2" class="vsb-current-video-title"></p>
+                        <button id="vcbc-2" type="button" class="vsb-close" data-dismiss="modal" aria-label="Close">
+                            <i id="vcbi-2" class="bi bi-x-lg"></i>
+                        </button>
+                    </div>
+                    <iframe id="vff-2" class="videos-full-frame" title="" allow="accelerometer;clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" >
+                    </iframe>
+                </div>
+            </div> 
+            <div class="videos-card">
+                <div class="videos-card-title">
+                    Уроки по Git и GitHub
+                </div>
+                <div class="videos-carusel-wrap">
+                    <div id="vc-3" class="videos-carusel">
+                        <div class="videos-frame-mini-wrap">
+                            <iframe id="vf3-1" class="videos-mini-frame" src="https://www.youtube.com/embed/JdUzxh8miQw" title="#1 Уроки Git+GitHub - Что такое система управления версиями" allow="accelerometer;clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" ></iframe>
+                            <button id="vb3-1" class="vmf-click"></button>
+                        </div>
+                        <div class="videos-frame-mini-wrap">
+                            <iframe id="vf3-2" class="videos-mini-frame" src="https://www.youtube.com/embed/WicjZfW29ls" title="#2 Уроки Git+GitHub - Установка на Windows" allow="accelerometer;clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" ></iframe>
+                            <button id="vb3-2" class="vmf-click"></button>
+                        </div>
+                        <div class="videos-frame-mini-wrap">
+                            <iframe id="vf3-3" class="videos-mini-frame" src="https://www.youtube.com/embed/9dkzbSnN2FQ" title="#3 Уроки Git+GitHub - Регистрация на GitHub и наш первый онлайн репозиторий" allow="accelerometer;clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" ></iframe>
+                            <button id="vb3-3" class="vmf-click"></button>
+                        </div>
+                        <div class="videos-frame-mini-wrap">
+                            <iframe id="vf3-4" class="videos-mini-frame" src="https://www.youtube.com/embed/Pl0xwUicJDc" title="#4 Уроки Git+GitHub - Учим команды git clone, git status, git add, git commit и другие" allow="accelerometer;clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" ></iframe>
+                            <button id="vb3-4" class="vmf-click"></button>
+                        </div>
+                        <div class="videos-frame-mini-wrap">
+                            <iframe id="vf3-5" class="videos-mini-frame" src="https://www.youtube.com/embed/YxATSZRx3ps" title="#5 Уроки Git+GitHub - Учим аналогичные команды в редакторе Visual Studio Code" allow="accelerometer;clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" ></iframe>
+                            <button id="vb3-5" class="vmf-click"></button>
+                        </div>
+                        <div class="videos-frame-mini-wrap">
+                            <iframe id="vf3-6" class="videos-mini-frame" src="https://www.youtube.com/embed/__GVBVv9Erg" title="#6 Уроки Git+GitHub - Создаем свои собственные команды или Алиасы" allow="accelerometer;clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" ></iframe>
+                            <button id="vb3-6" class="vmf-click"></button>
+                        </div>
+                        <div class="videos-frame-mini-wrap">
+                            <iframe id="vf3-7" class="videos-mini-frame" src="https://www.youtube.com/embed/oSyZXepztD4" title="#7 Уроки Git+GitHub - Отмена изменений и возврат к другому коммиту" allow="accelerometer;clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" ></iframe>
+                            <button id="vb3-7" class="vmf-click"></button>
+                        </div>
+                        <div class="videos-frame-mini-wrap">
+                            <iframe id="vf3-8" class="videos-mini-frame" src="https://www.youtube.com/embed/Lf8arzsq__U" title="#8 Уроки Git+GitHub - Работа с ветками git branch" allow="accelerometer;clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" ></iframe>
+                            <button id="vb3-8" class="vmf-click"></button>
+                        </div>
+                        <div class="videos-frame-mini-wrap">
+                            <iframe id="vf3-9" class="videos-mini-frame" src="https://www.youtube.com/embed/80_vjSgrudY" title="#9 Уроки Git+GitHub - Сохраняем фрагменты кода, создаем свои Gist" allow="accelerometer;clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" ></iframe>
+                            <button id="vb3-9" class="vmf-click"></button>
+                        </div>
+                        <div class="videos-frame-mini-wrap">
+                            <iframe id="vf3-10" class="videos-mini-frame" src="https://www.youtube.com/embed/z5gOy8cBle0" title="#10 Уроки Git+GitHub - Работа с панелью Система управления версиями в редакторе кода VS Code" allow="accelerometer;clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" ></iframe>
+                            <button id="vb3-10" class="vmf-click"></button>
+                        </div>
+                    </div>
+                </div>
+                <div id="vsb-3" class="videos-show-block">
+                    <div class="vsb-wrap">
+                        <p id="vcvt-3" class="vsb-current-video-title"></p>
+                        <button id="vcbc-3" type="button" class="vsb-close" data-dismiss="modal" aria-label="Close">
+                            <i id="vcbi-3" class="bi bi-x-lg"></i>
+                        </button>
+                    </div>
+                    <iframe id="vff-3" class="videos-full-frame" title="" allow="accelerometer;clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" >
+                    </iframe>
+                </div>
+            </div> 
+            <div class="videos-card">
+                <div class="videos-card-title">
+                    Уроки по JavaScript
+                </div>
+                <div class="videos-carusel-wrap">
+                    <div id="vc-4" class="videos-carusel">
+                        <div class="videos-frame-mini-wrap">
+                            <iframe id="vf4-1" class="videos-mini-frame" src="https://www.youtube.com/embed/4cXGrcP_yNo" title="#1 Введение в JavaScript, Консоль разработчика, Супер JavaScript, Основы" allow="accelerometer;clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" ></iframe>
+                            <button id="vb4-1" class="vmf-click"></button>
+                        </div>
+                        <div class="videos-frame-mini-wrap">
+                            <iframe id="vf4-2" class="videos-mini-frame" src="https://www.youtube.com/embed/WLpvuqsf6cI" title="#2 Строковый и логический тип данных, Супер JavaScript, Основы" allow="accelerometer;clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" ></iframe>
+                            <button id="vb4-2" class="vmf-click"></button>
+                        </div>
+                        <div class="videos-frame-mini-wrap">
+                            <iframe id="vf4-3" class="videos-mini-frame" src="https://www.youtube.com/embed/OPeujASczVM" title="#3 Шаблонные строки, Случайные числа, Округление чисел, Супер JavaScript, Основы" allow="accelerometer;clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" ></iframe>
+                            <button id="vb4-3" class="vmf-click"></button>
+                        </div>
+                        <div class="videos-frame-mini-wrap">
+                            <iframe id="vf4-4" class="videos-mini-frame" src="https://www.youtube.com/embed/6zPhOU2cxjw" title="#4 Массивы на JavaScript, Супер JavaScript, Основы" allow="accelerometer;clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" ></iframe>
+                            <button id="vb4-4" class="vmf-click"></button>
+                        </div>
+                        <div class="videos-frame-mini-wrap">
+                            <iframe id="vf4-5" class="videos-mini-frame" src="https://www.youtube.com/embed/MxRT9oiEScU" title="#5 Объекты на JavaScript, Супер JavaScript, Основы" allow="accelerometer;clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" ></iframe>
+                            <button id="vb4-5" class="vmf-click"></button>
+                        </div>
+                        <div class="videos-frame-mini-wrap">
+                            <iframe id="vf4-6" class="videos-mini-frame" src="https://www.youtube.com/embed/C0rqUyNI5zA" title="#6 Диалоговые окна, Условия if и switch, Супер JavaScript, Основы" allow="accelerometer;clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" ></iframe>
+                            <button id="vb4-6" class="vmf-click"></button>
+                        </div>
+                        <div class="videos-frame-mini-wrap">
+                            <iframe id="vf4-7" class="videos-mini-frame" src="https://www.youtube.com/embed/82V2jyYnuQw" title="#7 Циклы на JavaScript, Супер JavaScript, Основы" allow="accelerometer;clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" ></iframe>
+                            <button id="vb4-7" class="vmf-click"></button>
+                        </div>
+                        <div class="videos-frame-mini-wrap">
+                            <iframe id="vf4-8" class="videos-mini-frame" src="https://www.youtube.com/embed/FXs1zT-ATHA" title="#8 Функции на JavaScript и решение задач, Супер JavaScript, Основы" allow="accelerometer;clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" ></iframe>
+                            <button id="vb4-8" class="vmf-click"></button>
+                        </div>
+                        <div class="videos-frame-mini-wrap">
+                            <iframe id="vf4-9" class="videos-mini-frame" src="https://www.youtube.com/embed/LBebvQI6raI" title="#9 Дата и время на языке JavaScript, Супер JavaScript, Основы" allow="accelerometer;clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" ></iframe>
+                            <button id="vb4-9" class="vmf-click"></button>
+                        </div>
+                        <div class="videos-frame-mini-wrap">
+                            <iframe id="vf4-10" class="videos-mini-frame" src="https://www.youtube.com/embed/jMoyWtoDtYA" title="#10 Документация кода JSDoc и Исключения, Супер JavaScript, Основы" allow="accelerometer;clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" ></iframe>
+                            <button id="vb4-10" class="vmf-click"></button>
+                        </div>
+                    </div>
+                </div>
+                <div id="vsb-4" class="videos-show-block">
+                    <div class="vsb-wrap">
+                        <p id="vcvt-4" class="vsb-current-video-title"></p>
+                        <button id="vcbc-4" type="button" class="vsb-close" data-dismiss="modal" aria-label="Close">
+                            <i id="vcbi-4" class="bi bi-x-lg"></i>
+                        </button>
+                    </div>
+                    <iframe id="vff-4" class="videos-full-frame" title="" allow="accelerometer;clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" >
+                    </iframe>
+                </div>
+            </div>    
+        </div>
+    </div>
+    <footer>
+        <div class="container wide-c">
+            <div class="row wide-c">
+                <div class="center-block col-md-6">
+                    <p class="social-title">Предлагаем также ознакомиться с нашими группами в ВК</p>
+                    <a href="https://vk.com/club199867942" class="around-block vk-block"><img src="../../images/vk.svg" alt="" class="vk">Материалы для ознакомления</a>
+                    <a href="https://vk.com/club203133993" class="around-block vk-block"><img src="../../images/vk.svg" alt="" class="vk">Моя личная Библиотека</a>
+                    <a href="https://vk.com/club203135453" class="around-block vk-block"><img src="../../images/vk.svg" alt="" class="vk">Математическая база</a>
+                </div>
+                <div class="center-flex col-md-6">
+                    <p class="center">Контрольная работа по дисциплине "Веб-Технологии" <br> Выполнил студент группы ЗЦИС-27 <br> Филиппов И.А</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <div class="modal fade" id="staticBackdrop" data-backdrop="static" data-keyboard="false" tabindex="-1" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+            <div class="modal-content mf">
+                <div class="modal-header mf-header">
+                    <button class="tablinks ah-link ah-hover tab-active" onclick="openTab(event, 'autorization')">Вход</button>
+                    <button class="tablinks ah-link ah-hover" onclick="openTab(event, 'registration')">Регистрация</button>
+                    <div class="mf-header-space"></div>
+                    <button type="button" class="close ah-link ah-hover center-flex" data-dismiss="modal" aria-label="Close">
+                        <i class="bi bi-x-lg"></i>
+                    </button>
+                </div>
+                <div id="autorization" class="tabcontent">
+                    <div class="modal-body mf-body">
+                        <p class="mf-title">Вход через социальные сети</p>
+                        <div class="social-sign-wrap center-flex">
+                            <div class="row social-sign">
+                                <div class="col ss-button-wrap l"><a href="" class="col ss-button center-flex ss-fb"><i class="fa fa-facebook"></i></a></div>
+                                <div class="col ss-button-wrap"><a href="" class="col ss-button center-flex ss-tw"><i class="fa fa-twitter"></i></a></div>
+                                <div class="col ss-button-wrap"><a href="" class="col ss-button center-flex ss-gg"><i class="fa fa-google-plus"></i></a></div>
+                                <div class="col ss-button-wrap r"><a href="" class="col ss-button center-flex ss-vk"><i class="fa fa-vk"></i></a></div>
+                            </div>
+                        </div>
+                        <p class="mf-title">Вход через никнейм или email</p>
+                        <p class="bad-pass off-display">Неверный логин или пароль</p>
+                        <form method="post" class="form-login">
+                            <div class="input-wrap">
+                                <i class="fa fa-user input-icon"></i>
+                                <input type="text" name="email" value="" class="form-input log-login" placeholder="Никнейм или email" required="">
+                            </div>                               
+                            <div class="input-wrap">
+                                <i class="fa fa-lock input-icon"></i>
+                                <input type="password" name="password" class="form-input log-pass" placeholder="Пароль" required="">
+                            </div>        
+                            <div class="input-wrap">
+                                <div class="form-check">
+                                    <input class="form-check-input custom-input" type="checkbox" value="" id="rememberMe" checked>
+                                    <label class="form-check-label" for="rememberMe">
+                                        Запомнить меня
+                                    </label>
+                                </div>
+                            </div>                        
+                            <div class="modal-footer mf-footer">
+                                <button type="submit" class="submit-form btn btn-primary">Войти</button>
+                            </div>                           
+                        </form>
+                    </div>
+                </div>
+                <div id="registration" class="tabcontent">
+                    <div class="modal-body mf-body">
+                        <p class="mf-title">Регистрация через социальные сети</p>
+                        <div class="social-sign-wrap center-flex">
+                            <div class="row social-sign">
+                                <div class="col ss-button-wrap l"><a href="" class="col ss-button center-flex ss-fb"><i class="fa fa-facebook"></i></a></div>
+                                <div class="col ss-button-wrap"><a href="" class="col ss-button center-flex ss-tw"><i class="fa fa-twitter"></i></a></div>
+                                <div class="col ss-button-wrap"><a href="" class="col ss-button center-flex ss-gg"><i class="fa fa-google-plus"></i></a></div>
+                                <div class="col ss-button-wrap r"><a href="" class="col ss-button center-flex ss-vk"><i class="fa fa-vk"></i></a></div>
+                            </div>
+                        </div>
+                        <p class="mf-title">Регистрация через сайт</p>
+                        <form method="post" class="mf-form">
+                            <p class="reg-note">Выберите себе имя, которое будет отображаться в вашем профиле на сайте:</p>
+                            <div class="input-wrap iw-note">
+                                <i class="fa fa-user input-icon"></i>
+                                <input type="text" name="login" value="" class="form-input reg-name" placeholder="Никнейм" required="">                            
+                            </div>
+                            <p class="reg-note">Привяжите адрес электронной почты</p>
+                            <div class="input-wrap iw-note">
+                                <i class="bi bi-envelope-at-fill input-icon"></i>
+                                <input type="text" name="email" value="" class="form-input reg-mail" placeholder="Email" required="">                             
+                            </div>
+                            <p class="reg-note">Придумайте достаточно сложный пароль:</p> 
+                            <div id="valid-block" class="pass-note">
+                                <p>Пароль должен содержать следующее:</p>
+                                <p id="valid-letter" class="invalid">Нижний регистр буква</p>
+                                <p id="valid-capital" class="invalid">Заглавная (прописная) буква</p>
+                                <p id="valid-number" class="invalid">Число</p>
+                                <p id="valid-length" class="invalid">Минимум 8 символов</p>
+                            </div>                              
+                            <div class="input-wrap iw-note">
+                                <i class="fa fa-lock input-icon"></i>
+                                <input type="password" name="pass1" class="form-input reg-pass1" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" placeholder="Пароль" required="">                               
+                            </div> 
+                            <p class="reg-note">Повторите пароль:</p>
+                            <p id="pass-mismatch" class="reg-note invalid">Пароли не совпадают!</p>
+                            <p id="pass-match" class="reg-note valid">Пароли совпадают!</p>
+                            <div class="input-wrap iw-note">
+                                <i class="fa fa-lock input-icon"></i>
+                                <input type="password" name="pass2" class="form-input reg-pass2" placeholder="Повторите пароль" required="">                               
+                            </div>        
+                            <div class="input-wrap">
+                                <div class="form-check">
+                                    <input class="form-check-input custom-input" type="checkbox" value="" id="acceptRules" checked required="">
+                                    <span class="reg-note">Нажимая «Далее», Вы соглашаетесь с </span><a href="../reglament.html" class="span-link reg-note">регламентом</a><span class="reg-note"> и </span><a href="../politic.html" class="span-link reg-note">политикой конфиденциальности</a>                                                             
+                                </div>
+                            </div>                        
+                            <div class="modal-footer mf-footer">
+                                <button type="submit" class="submit-form btn btn-primary">Отправить</button>
+                            </div>                           
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="https://kit.fontawesome.com/60a957becd.js" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.3.1/js/bootstrap.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4" crossorigin="anonymous"></script>
+    <script src="../js/after-header.js"></script>
+    <script src="../js/mf.js"></script>
+    <script src="../js/theme.js"></script>
+    <script src="../js/login.js"></script>
+    <script src="../js/valid.js"></script>
+    <script src="../js/onload.js"></script>
+    <script src="../js/input-range.js"></script>
+    <script src="../js/videos-filter.js"></script>
+    <script src="../js/videos-carusel.js"></script>
+</body>
+</html>

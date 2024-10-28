@@ -1,0 +1,24 @@
+.breadcrumb {
+    background-color: var(--color-breadcrumb);
+    margin:0;
+    height:50px;
+    position: relative;
+    z-index: 10;
+}
+ul.bread {
+    padding: 10px 16px;
+    list-style: none;
+}
+
+ul.bread li {
+    display: inline;
+    font-size: 18px;
+}
+ul.bread li a:hover {
+    color: var(--color-text);
+    text-decoration: underline;
+}
+ul.bread li a {
+    color: var(--color-text);
+    text-decoration: none;
+}

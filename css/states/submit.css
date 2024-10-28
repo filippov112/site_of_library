@@ -1,0 +1,17 @@
+.submit-form {
+    color:var(--color-text);
+    border:2px solid var(--color-text);
+    width:100%;
+    background-color:var(--color-submit);
+    border-radius: 5px;
+    margin:0;
+}
+.submit-form:hover {
+    color:var(--color-text);
+    background-color: var(--color-submit-hv);
+    border-color:var(--color-text);
+}
+.submit-form:focus{
+    color:var(--color-text);
+    background-color: var(--color-submit-fc);
+}

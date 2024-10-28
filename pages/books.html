@@ -1,0 +1,602 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <title>Филипедия. Книжный каталог</title>
+    <link rel="shortcut icon" href="../images/favicon.svg" type="image/x-icon">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/all.css">
+</head>
+<body>
+    <div id="after-header">
+        <div class="ah-bg"></div>
+        <div class="container wide-c" id="ah-wrap">
+            <button id="ah-icon" class="ah-link ah-hover center-flex">
+                &#9776;
+            </button>
+            <div id="ah-rollable" class="ah-deployed">
+                <div class="ah-link active-module center-flex">Книжный каталог</div>
+                <a href="videos.html" class="ah-link ah-hover center-flex">Видео курсы</a> 
+                <a href="forum.html" class="ah-link ah-hover center-flex">Форум</a>
+                <a href="new_articles.html" class="ah-link ah-hover center-flex">Добавить статью</a>
+            </div>
+            <form action="/search" method="get" class="search">
+                <input type="search" autocomplete="on | off" class="search-input">
+            </form>
+            <div class="center-flex ah-link ah-hover theme-wrap">
+                <button type="button" data-toggle="modal" class="mini-lk-button" data-target="#staticBackdrop">
+                    <i class="fa-solid fa-house home-icon"></i>
+                </button>
+            </div>
+            <div class="center-flex theme-wrap">
+                <div class="form-check form-switch">
+                    <input class="form-check-input theme-switch" type="checkbox" id="flexSwitchCheckDefault">
+                    <div class="theme-switch-label bi bi-sun-fill"></div>
+                </div>
+            </div>
+        </div>
+        <div id="ah-responsive">
+            <div class="ah-link active-module center-flex">Книжный каталог</div>
+            <a href="videos.html" class="ah-link ah-hover center-flex">Видео курсы</a> 
+            <a href="forum.html" class="ah-link ah-hover center-flex">Форум</a>
+            <a href="new_articles.html" class="ah-link ah-hover center-flex">Добавить статью</a>
+        </div>
+        <div class="breadcrumb">
+            <ul class="bread container wide-c">
+                <li><a href="/">/</a></li>
+                <li><i class="bi bi-chevron-right"></i></li>
+                <li>Книжный каталог</li>
+            </ul>
+        </div>
+    </div>
+    <div class="main-container container wide-c">
+        <div class="book-body">
+            <div id="book-sidebar" class="book-side-off">
+                <div class="book-menu">             
+                        <div id="filter-title">Фильтр по каталогу</div>
+                        <div class="filter-block">
+                            <button id="show-f1" class="show-filter-block">Технологии</button>
+                            <div id="block-f1" class="filter-body-content">
+                                <div class="filter-body">
+                                    <div class="filter-row">
+                                        <input class="form-check-input custom-input filter-1" type="checkbox" value="" id="fil-chexk-1" >
+                                        <label class="form-check-label filter-row-label" for="fil-chexk-1">Python</label>
+                                    </div>
+                                    <div class="filter-row">
+                                        <input class="form-check-input custom-input filter-1" type="checkbox" value="" id="fil-chexk-2" >
+                                        <label class="form-check-label filter-row-label" for="fil-chexk-2">Kotlin</label>
+                                    </div>
+                                    <div class="filter-row">
+                                        <input class="form-check-input custom-input filter-1" type="checkbox" value="" id="fil-chexk-3" >
+                                        <label class="form-check-label filter-row-label" for="fil-chexk-3">Java</label>
+                                    </div>
+                                    <div class="filter-row">
+                                        <input class="form-check-input custom-input filter-1" type="checkbox" value="" id="fil-chexk-4" >
+                                        <label class="form-check-label filter-row-label" for="fil-chexk-4">C++</label>
+                                    </div>
+                                    <div class="filter-row">
+                                        <input class="form-check-input custom-input filter-1" type="checkbox" value="" id="fil-chexk-5" >
+                                        <label class="form-check-label filter-row-label" for="fil-chexk-5">C#</label>
+                                    </div>
+                                    <div class="filter-row">
+                                        <input class="form-check-input custom-input filter-1" type="checkbox" value="" id="fil-chexk-6" >
+                                        <label class="form-check-label filter-row-label" for="fil-chexk-6">JavaScript</label>
+                                    </div>
+                                    <div class="filter-row">
+                                        <input class="form-check-input custom-input filter-1" type="checkbox" value="" id="fil-chexk-7" >
+                                        <label class="form-check-label filter-row-label" for="fil-chexk-7">HTML/CSS</label>
+                                    </div>
+                                    <div class="filter-row">
+                                        <input class="form-check-input custom-input filter-1" type="checkbox" value="" id="fil-chexk-8" >
+                                        <label class="form-check-label filter-row-label" for="fil-chexk-8">Docker</label>
+                                    </div>
+                                    <div class="filter-row">
+                                        <input class="form-check-input custom-input filter-1" type="checkbox" value="" id="fil-chexk-9" >
+                                        <label class="form-check-label filter-row-label" for="fil-chexk-9">Git</label>
+                                    </div>
+                                    <div class="filter-row">
+                                        <input class="form-check-input custom-input filter-1" type="checkbox" value="" id="fil-chexk-10" >
+                                        <label class="form-check-label filter-row-label" for="fil-chexk-10">Nginx</label>
+                                    </div>
+                                </div>                      
+                            </div>
+                        </div>
+                        <div id="filter-div-2" class="filter-block">
+                            <button id="show-f2" class="show-filter-block">Год выпуска</button>
+                            <div id="block-f2" class="filter-body-content">
+                                <div class="filter-body">
+                                    <div class="filter-row">
+                                        <p>От: </p>
+                                        <input type="range" id="filter-range-year-1" class="styled-slider filter-2-range filter-2"  min="1956" max="2023">                                   
+                                        <input type="number" id="filter-range-year-label-1" class="filter-2-input filter-2" min="1956" max="2023">
+                                    </div>
+                                    <div class="filter-row">
+                                        <p>До: </p>
+                                        <input type="range" id="filter-range-year-2" class="styled-slider filter-2-range filter-2"  min="1956" max="2023">                                   
+                                        <input type="number" id="filter-range-year-label-2" class="filter-2-input filter-2" min="1956" max="2023">
+                                    </div>
+                                </div>             
+                            </div>
+                        </div>
+                        <div class="filter-block">
+                            <button id="show-f3" class="show-filter-block">Язык</button>
+                            <div id="block-f3" class="filter-body-content">
+                                <div class="filter-body">
+                                    <div class="filter-row">
+                                        <input type="radio" id="filter-lang-key-1" name="drone" value="filter-lang-key-1" class="f-radio filter-3-lang filter-3" checked>
+                                        <label for="filter-lang-key-1" class="fiter-3-lang-title">Весь каталог</label>
+                                    </div>                               
+                                    <div class="filter-row">
+                                        <input type="radio" id="filter-lang-key-2" name="drone" value="filter-lang-key-2" class="f-radio filter-3-lang filter-3">
+                                        <label for="filter-lang-key-2" class="fiter-3-lang-title">Отечественные авторы</label>
+                                    </div>                               
+                                    <div class="filter-row">
+                                        <input type="radio" id="filter-lang-key-3" name="drone" value="filter-lang-key-3" class="f-radio filter-3-lang filter-3">
+                                        <label for="filter-lang-key-3" class="fiter-3-lang-title">В переводе на русский</label>
+                                    </div>
+                                    <div class="filter-row">
+                                        <input type="radio" id="filter-lang-key-4" name="drone" value="filter-lang-key-4" class="f-radio filter-3-lang filter-3">
+                                        <label for="filter-lang-key-4" class="fiter-3-lang-title">Зарубежная литература</label>
+                                    </div>
+                                </div>                                
+                            </div>
+                        </div>
+                        <div class="filter-block">
+                            <button id="show-f4" class="show-filter-block">Тип издания</button>
+                            <div id="block-f4" class="filter-body-content">
+                                <div class="filter-body">
+                                    <div class="filter-row">
+                                        <input class="form-check-input custom-input filter-4" type="checkbox" value="" id="fil-type-1" >
+                                        <label class="form-check-label filter-row-label" for="fil-type-1">Справочники</label>
+                                    </div>
+                                    <div class="filter-row">
+                                        <input class="form-check-input custom-input filter-4" type="checkbox" value="" id="fil-type-2" >
+                                        <label class="form-check-label filter-row-label" for="fil-type-2">Учебники</label>
+                                    </div>
+                                    <div class="filter-row">
+                                        <input class="form-check-input custom-input filter-4" type="checkbox" value="" id="fil-type-3" >
+                                        <label class="form-check-label filter-row-label" for="fil-type-3">Практические пособия</label>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="filter-block">
+                            <button id="show-f5" class="show-filter-block">Авторы</button>
+                            <div id="block-f5" class="filter-body-content">
+                                <div class="filter-body">
+                                    <div class="filter-autor filter-5">Феррейра Фило Владстон</div>
+                                    <div class="filter-autor filter-5">Лелек Скит</div>
+                                    <div class="filter-autor filter-5">Лусиану Рамальо</div>
+                                    <div class="filter-autor filter-5">Сюй Алекс</div>
+                                    <div class="filter-autor filter-5">Свейгарт Эл</div>
+                                    <div class="filter-autor filter-5">Дирк Харди</div>
+                                    <div class="filter-autor filter-5">Ньюмен Сэм</div>
+                                    <div class="filter-autor filter-5">Брасс Петер</div>
+                                    <div class="filter-autor filter-5">Воган Ли</div>
+                                    <div class="filter-autor filter-5">Краудер Ти Джей</div>   
+                                </div>                                                                       
+                            </div>
+                        </div>
+                        <button type="submit" id="apply-filter" class="submit-form btn btn-primary">Применить фильтр</button>
+                        <button type="submit" id="reset-filter" class="submit-form btn btn-primary">Сбросить фильтр</button>
+                  
+                </div>
+                <button id="show-sidebar"></button>
+            </div>            
+            <div id="book-content">
+                <div class="book-card-wrap">
+                    <div id="bc-1" class="book-card">
+                        <div class="book-card-image">
+                            <img id="card-1" src="../images/books/1.webp" class="book-card-img" alt="">
+                        </div>
+                        <div id="card-desc-1" class="book-card-desc">                          
+                            <div class="book-card-content">
+                                <div class="book-card-title">
+                                    <a href="/books/1.html"><h1>Чистая архитектура</h1></a>
+                                </div>
+                                <p>"Идеальный программист" и "Чистый код" - легендарные бестселлеры Роберта Мартина - рассказывают, как достичь высот профессионализма. "Чистая архитектура" продолжает эту тему, но не предлагает несколько вариантов в стиле "решай сам", а объясняет, что именно следует делать, по какой причине и почему именно такое решение станет принципиально важным для вашего успеха.</p>
+                                <div class="book-card-footer">
+                                    <div class="book-card-year">
+                                        <h3>2022 г.</h3>
+                                    </div>
+                                    <div class="book-card-autor">
+                                        <h3>Мартин Роберт С.</h3>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                        </div>
+                    </div>
+                </div>
+                <div class="book-card-wrap">
+                    <div id="bc-2" class="book-card">
+                        <div class="book-card-image">
+                            <img id="card-2" src="../images/books/2.webp" class="book-card-img" alt="">
+                        </div>
+                        <div id="card-desc-2" class="book-card-desc">                          
+                            <div class="book-card-content">
+                                <div class="book-card-title">
+                                    <a href="/books/2.html"><h1>Паттерны объектно-ориентированного проектирования</h1></a>
+                                </div>
+                                <p>Больше 25 лет прошло с момента выхода первого тиража книги Design Patterns. За это время книга из популярной превратилась в культовую. Во всем мире ее рекомендуют прочитать каждому, кто хочет связать жизнь с информационными технологиями и программированием. "Русский" язык, на котором разговаривают айтишники поменялся, многие англоязычные термины стали привычными, паттерны вошли в нашу жизнь. Перед вами юбилейное издание с обновленным переводом книги, ставшей must-read для каждого программиста.</p>
+                                <div class="book-card-footer">
+                                    <div class="book-card-year">
+                                        <h3>2021 г.</h3>
+                                    </div>
+                                    <div class="book-card-autor">
+                                        <h3>Гамма Э., Джонсон Р., Хелм Р.</h3>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="book-card-wrap">
+                    <div id="bc-3" class="book-card">
+                        <div class="book-card-image">
+                            <img id="card-3" src="../images/books/3.webp" class="book-card-img" alt="">
+                        </div>
+                        <div id="card-desc-3" class="book-card-desc">                          
+                            <div class="book-card-content">
+                                <div class="book-card-title">
+                                    <a href="/books/3.html"><h1>Computer Science для программиста-самоучки</h1></a>
+                                </div>
+                                <p>Книги Кори Альтхоффа вдохновили сотни тысяч людей на самостоятельное изучение программирования. Чтобы стать профи в программировании, не обязательно иметь диплом в области computer science, и личный опыт Кори подтверждает это: он стал разработчиком ПО в eBay и добился этого самостоятельно.
+                                    Познакомьтесь с наиболее важными темами computer science, в которых должен разбираться каждый программист-самоучка, мечтающий о выдающейся карьере, - это структуры данных и алгоритмы.</p>
+                                <div class="book-card-footer">
+                                    <div class="book-card-year">
+                                        <h3>2023 г.</h3>
+                                    </div>
+                                    <div class="book-card-autor">
+                                        <h3>Альтхофф Кори</h3>
+                                    </div>
+                                </div>
+                            </div>    
+                        </div>
+                    </div>
+                </div>
+                <div class="book-card-wrap">
+                    <div id="bc-4" class="book-card">
+                        <div class="book-card-image">
+                            <img id="card-4" src="../images/books/4.webp" class="book-card-img" alt="">
+                        </div>
+                        <div id="card-desc-4" class="book-card-desc">                          
+                            <div class="book-card-content">
+                                <div class="book-card-title">
+                                    <a href="/books/4.html"><h1>Site Reliability Engineering. Надежность и безотказность как в Google</h1></a>
+                                </div>
+                                <p>Вот уже почти 20 лет компания Google обеспечивает работу невообразимо сложных и масштабных систем, которые чутко реагируют на запросы пользователей. Поисковик Google находит ответ на любые вопросы за доли секунды, карты Google с высочайшей точностью отражают земной ландшафт, а почта Google доступна в режиме 365/24/7 и, в сущности, стала первым общедоступным облачным хранилищем. Неужели эти системы безупречны? Нет, они тоже отказывают, ломаются и устаревают, как любая техника. Просто мы этого не замечаем. Все дело в том, что уже более десяти лет Google нарабатывает уникальную технологию Site Reliability Engineering, обеспечивающую бесперебойную работу и поступательное развитие софтверных систем любой сложности.</p>
+                                <div class="book-card-footer">
+                                    <div class="book-card-year">
+                                        <h3>2021 г.</h3>
+                                    </div>
+                                    <div class="book-card-autor">
+                                        <h3>Бейер Бетси, Петофф Дженнифер, Джоунс Крис</h3>
+                                    </div>
+                                </div>
+                            </div>                           
+                        </div>
+                    </div>
+                </div>
+                <div class="book-card-wrap">
+                    <div id="bc-5" class="book-card">
+                        <div class="book-card-image">
+                            <img id="card-5" src="../images/books/5.webp" class="book-card-img" alt="">
+                        </div>
+                        <div id="card-desc-5" class="book-card-desc">                          
+                            <div class="book-card-content">
+                                <div class="book-card-title">
+                                    <a href="/books/5.html"><h1>Site Reliability Engineering. Надежность и безотказность как в Google</h1></a>
+                                </div>
+                                <p>Вот уже почти 20 лет компания Google обеспечивает работу невообразимо сложных и масштабных систем, которые чутко реагируют на запросы пользователей. Поисковик Google находит ответ на любые вопросы за доли секунды, карты Google с высочайшей точностью отражают земной ландшафт, а почта Google доступна в режиме 365/24/7 и, в сущности, стала первым общедоступным облачным хранилищем. Неужели эти системы безупречны? Нет, они тоже отказывают, ломаются и устаревают, как любая техника. Просто мы этого не замечаем. Все дело в том, что уже более десяти лет Google нарабатывает уникальную технологию Site Reliability Engineering, обеспечивающую бесперебойную работу и поступательное развитие софтверных систем любой сложности.</p>
+                                <div class="book-card-footer">
+                                    <div class="book-card-year">
+                                        <h3>2021 г.</h3>
+                                    </div>
+                                    <div class="book-card-autor">
+                                        <h3>Бейер Бетси, Петофф Дженнифер, Джоунс Крис</h3>
+                                    </div>
+                                </div>
+                            </div>                           
+                        </div>
+                    </div>
+                </div>
+                <div class="book-card-wrap">
+                    <div id="bc-6" class="book-card">
+                        <div class="book-card-image">
+                            <img id="card-6" src="../images/books/6.webp" class="book-card-img" alt="">
+                        </div>
+                        <div id="card-desc-6" class="book-card-desc">                          
+                            <div class="book-card-content">
+                                <div class="book-card-title">
+                                    <a href="/books/6.html"><h1>Site Reliability Engineering. Надежность и безотказность как в Google</h1></a>
+                                </div>
+                                <p>Вот уже почти 20 лет компания Google обеспечивает работу невообразимо сложных и масштабных систем, которые чутко реагируют на запросы пользователей. Поисковик Google находит ответ на любые вопросы за доли секунды, карты Google с высочайшей точностью отражают земной ландшафт, а почта Google доступна в режиме 365/24/7 и, в сущности, стала первым общедоступным облачным хранилищем. Неужели эти системы безупречны? Нет, они тоже отказывают, ломаются и устаревают, как любая техника. Просто мы этого не замечаем. Все дело в том, что уже более десяти лет Google нарабатывает уникальную технологию Site Reliability Engineering, обеспечивающую бесперебойную работу и поступательное развитие софтверных систем любой сложности.</p>
+                                <div class="book-card-footer">
+                                    <div class="book-card-year">
+                                        <h3>2021 г.</h3>
+                                    </div>
+                                    <div class="book-card-autor">
+                                        <h3>Бейер Бетси, Петофф Дженнифер, Джоунс Крис</h3>
+                                    </div>
+                                </div>
+                            </div>                           
+                        </div>
+                    </div>
+                </div>
+                <div class="book-card-wrap">
+                    <div id="bc-7" class="book-card">
+                        <div class="book-card-image">
+                            <img id="card-7" src="../images/books/7.webp" class="book-card-img" alt="">
+                        </div>
+                        <div id="card-desc-7" class="book-card-desc">                          
+                            <div class="book-card-content">
+                                <div class="book-card-title">
+                                    <a href="/books/7.html"><h1>Site Reliability Engineering. Надежность и безотказность как в Google</h1></a>
+                                </div>
+                                <p>Вот уже почти 20 лет компания Google обеспечивает работу невообразимо сложных и масштабных систем, которые чутко реагируют на запросы пользователей. Поисковик Google находит ответ на любые вопросы за доли секунды, карты Google с высочайшей точностью отражают земной ландшафт, а почта Google доступна в режиме 365/24/7 и, в сущности, стала первым общедоступным облачным хранилищем. Неужели эти системы безупречны? Нет, они тоже отказывают, ломаются и устаревают, как любая техника. Просто мы этого не замечаем. Все дело в том, что уже более десяти лет Google нарабатывает уникальную технологию Site Reliability Engineering, обеспечивающую бесперебойную работу и поступательное развитие софтверных систем любой сложности.</p>
+                                <div class="book-card-footer">
+                                    <div class="book-card-year">
+                                        <h3>2021 г.</h3>
+                                    </div>
+                                    <div class="book-card-autor">
+                                        <h3>Бейер Бетси, Петофф Дженнифер, Джоунс Крис</h3>
+                                    </div>
+                                </div>
+                            </div>                           
+                        </div>
+                    </div>
+                </div>
+                <div class="book-card-wrap">
+                    <div id="bc-8" class="book-card">
+                        <div class="book-card-image">
+                            <img id="card-8" src="../images/books/8.webp" class="book-card-img" alt="">
+                        </div>
+                        <div id="card-desc-8" class="book-card-desc">                          
+                            <div class="book-card-content">
+                                <div class="book-card-title">
+                                    <a href="/books/8.html"><h1>Site Reliability Engineering. Надежность и безотказность как в Google</h1></a>
+                                </div>
+                                <p>Вот уже почти 20 лет компания Google обеспечивает работу невообразимо сложных и масштабных систем, которые чутко реагируют на запросы пользователей. Поисковик Google находит ответ на любые вопросы за доли секунды, карты Google с высочайшей точностью отражают земной ландшафт, а почта Google доступна в режиме 365/24/7 и, в сущности, стала первым общедоступным облачным хранилищем. Неужели эти системы безупречны? Нет, они тоже отказывают, ломаются и устаревают, как любая техника. Просто мы этого не замечаем. Все дело в том, что уже более десяти лет Google нарабатывает уникальную технологию Site Reliability Engineering, обеспечивающую бесперебойную работу и поступательное развитие софтверных систем любой сложности.</p>
+                                <div class="book-card-footer">
+                                    <div class="book-card-year">
+                                        <h3>2021 г.</h3>
+                                    </div>
+                                    <div class="book-card-autor">
+                                        <h3>Бейер Бетси, Петофф Дженнифер, Джоунс Крис</h3>
+                                    </div>
+                                </div>
+                            </div>                           
+                        </div>
+                    </div>
+                </div>
+                <div class="book-card-wrap">
+                    <div id="bc-9" class="book-card">
+                        <div class="book-card-image">
+                            <img id="card-9" src="../images/books/9.webp" class="book-card-img" alt="">
+                        </div>
+                        <div id="card-desc-9" class="book-card-desc">                          
+                            <div class="book-card-content">
+                                <div class="book-card-title">
+                                    <a href="/books/9.html"><h1>Site Reliability Engineering. Надежность и безотказность как в Google</h1></a>
+                                </div>
+                                <p>Вот уже почти 20 лет компания Google обеспечивает работу невообразимо сложных и масштабных систем, которые чутко реагируют на запросы пользователей. Поисковик Google находит ответ на любые вопросы за доли секунды, карты Google с высочайшей точностью отражают земной ландшафт, а почта Google доступна в режиме 365/24/7 и, в сущности, стала первым общедоступным облачным хранилищем. Неужели эти системы безупречны? Нет, они тоже отказывают, ломаются и устаревают, как любая техника. Просто мы этого не замечаем. Все дело в том, что уже более десяти лет Google нарабатывает уникальную технологию Site Reliability Engineering, обеспечивающую бесперебойную работу и поступательное развитие софтверных систем любой сложности.</p>
+                                <div class="book-card-footer">
+                                    <div class="book-card-year">
+                                        <h3>2021 г.</h3>
+                                    </div>
+                                    <div class="book-card-autor">
+                                        <h3>Бейер Бетси, Петофф Дженнифер, Джоунс Крис</h3>
+                                    </div>
+                                </div>
+                            </div>                           
+                        </div>
+                    </div>
+                </div>
+                <div class="book-card-wrap">
+                    <div id="bc-10" class="book-card">
+                        <div class="book-card-image">
+                            <img id="card-10" src="../images/books/10.webp" class="book-card-img" alt="">
+                        </div>
+                        <div id="card-desc-10" class="book-card-desc">                          
+                            <div class="book-card-content">
+                                <div class="book-card-title">
+                                    <a href="/books/10.html"><h1>Site Reliability Engineering. Надежность и безотказность как в Google</h1></a>
+                                </div>
+                                <p>Вот уже почти 20 лет компания Google обеспечивает работу невообразимо сложных и масштабных систем, которые чутко реагируют на запросы пользователей. Поисковик Google находит ответ на любые вопросы за доли секунды, карты Google с высочайшей точностью отражают земной ландшафт, а почта Google доступна в режиме 365/24/7 и, в сущности, стала первым общедоступным облачным хранилищем. Неужели эти системы безупречны? Нет, они тоже отказывают, ломаются и устаревают, как любая техника. Просто мы этого не замечаем. Все дело в том, что уже более десяти лет Google нарабатывает уникальную технологию Site Reliability Engineering, обеспечивающую бесперебойную работу и поступательное развитие софтверных систем любой сложности.</p>
+                                <div class="book-card-footer">
+                                    <div class="book-card-year">
+                                        <h3>2021 г.</h3>
+                                    </div>
+                                    <div class="book-card-autor">
+                                        <h3>Бейер Бетси, Петофф Дженнифер, Джоунс Крис</h3>
+                                    </div>
+                                </div>
+                            </div>                           
+                        </div>
+                    </div>
+                </div>
+                <div class="book-card-wrap">
+                    <div id="bc-11" class="book-card">
+                        <div class="book-card-image">
+                            <img id="card-11" src="../images/books/11.webp" class="book-card-img" alt="">
+                        </div>
+                        <div id="card-desc-11" class="book-card-desc">                          
+                            <div class="book-card-content">
+                                <div class="book-card-title">
+                                    <a href="/books/11.html"><h1>Site Reliability Engineering. Надежность и безотказность как в Google</h1></a>
+                                </div>
+                                <p>Вот уже почти 20 лет компания Google обеспечивает работу невообразимо сложных и масштабных систем, которые чутко реагируют на запросы пользователей. Поисковик Google находит ответ на любые вопросы за доли секунды, карты Google с высочайшей точностью отражают земной ландшафт, а почта Google доступна в режиме 365/24/7 и, в сущности, стала первым общедоступным облачным хранилищем. Неужели эти системы безупречны? Нет, они тоже отказывают, ломаются и устаревают, как любая техника. Просто мы этого не замечаем. Все дело в том, что уже более десяти лет Google нарабатывает уникальную технологию Site Reliability Engineering, обеспечивающую бесперебойную работу и поступательное развитие софтверных систем любой сложности.</p>
+                                <div class="book-card-footer">
+                                    <div class="book-card-year">
+                                        <h3>2021 г.</h3>
+                                    </div>
+                                    <div class="book-card-autor">
+                                        <h3>Бейер Бетси, Петофф Дженнифер, Джоунс Крис</h3>
+                                    </div>
+                                </div>
+                            </div>                           
+                        </div>
+                    </div>
+                </div>
+                <div class="book-card-wrap">
+                    <div id="bc-12" class="book-card">
+                        <div class="book-card-image">
+                            <img id="card-12" src="../images/books/12.webp" class="book-card-img" alt="">
+                        </div>
+                        <div id="card-desc-12" class="book-card-desc">                          
+                            <div class="book-card-content">
+                                <div class="book-card-title">
+                                    <a href="/books/12.html"><h1>Site Reliability Engineering. Надежность и безотказность как в Google</h1></a>
+                                </div>
+                                <p>Вот уже почти 20 лет компания Google обеспечивает работу невообразимо сложных и масштабных систем, которые чутко реагируют на запросы пользователей. Поисковик Google находит ответ на любые вопросы за доли секунды, карты Google с высочайшей точностью отражают земной ландшафт, а почта Google доступна в режиме 365/24/7 и, в сущности, стала первым общедоступным облачным хранилищем. Неужели эти системы безупречны? Нет, они тоже отказывают, ломаются и устаревают, как любая техника. Просто мы этого не замечаем. Все дело в том, что уже более десяти лет Google нарабатывает уникальную технологию Site Reliability Engineering, обеспечивающую бесперебойную работу и поступательное развитие софтверных систем любой сложности.</p>
+                                <div class="book-card-footer">
+                                    <div class="book-card-year">
+                                        <h3>2021 г.</h3>
+                                    </div>
+                                    <div class="book-card-autor">
+                                        <h3>Бейер Бетси, Петофф Дженнифер, Джоунс Крис</h3>
+                                    </div>
+                                </div>
+                            </div>                           
+                        </div>
+                    </div>
+                </div>
+           </div>
+        </div>   
+    </div>
+    <footer>
+        <div class="container wide-c">
+            <div class="row wide-c">
+                <div class="center-block col-md-6">
+                    <p class="social-title">Предлагаем также ознакомиться с нашими группами в ВК</p>
+                    <a href="https://vk.com/club199867942" class="around-block vk-block"><img src="../../images/vk.svg" alt="" class="vk">Материалы для ознакомления</a>
+                    <a href="https://vk.com/club203133993" class="around-block vk-block"><img src="../../images/vk.svg" alt="" class="vk">Моя личная Библиотека</a>
+                    <a href="https://vk.com/club203135453" class="around-block vk-block"><img src="../../images/vk.svg" alt="" class="vk">Математическая база</a>
+                </div>
+                <div class="center-flex col-md-6">
+                    <p class="center">Контрольная работа по дисциплине "Веб-Технологии" <br> Выполнил студент группы ЗЦИС-27 <br> Филиппов И.А</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <div class="modal fade" id="staticBackdrop" data-backdrop="static" data-keyboard="false" tabindex="-1" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+            <div class="modal-content mf">
+                <div class="modal-header mf-header">
+                    <button class="tablinks ah-link ah-hover tab-active" onclick="openTab(event, 'autorization')">Вход</button>
+                    <button class="tablinks ah-link ah-hover" onclick="openTab(event, 'registration')">Регистрация</button>
+                    <div class="mf-header-space"></div>
+                    <button type="button" class="close ah-link ah-hover center-flex" data-dismiss="modal" aria-label="Close">
+                        <i class="bi bi-x-lg"></i>
+                    </button>
+                </div>
+                <div id="autorization" class="tabcontent">
+                    <div class="modal-body mf-body">
+                        <p class="mf-title">Вход через социальные сети</p>
+                        <div class="social-sign-wrap center-flex">
+                            <div class="row social-sign">
+                                <div class="col ss-button-wrap l"><a href="" class="col ss-button center-flex ss-fb"><i class="fa fa-facebook"></i></a></div>
+                                <div class="col ss-button-wrap"><a href="" class="col ss-button center-flex ss-tw"><i class="fa fa-twitter"></i></a></div>
+                                <div class="col ss-button-wrap"><a href="" class="col ss-button center-flex ss-gg"><i class="fa fa-google-plus"></i></a></div>
+                                <div class="col ss-button-wrap r"><a href="" class="col ss-button center-flex ss-vk"><i class="fa fa-vk"></i></a></div>
+                            </div>
+                        </div>
+                        <p class="mf-title">Вход через никнейм или email</p>
+                        <p class="bad-pass off-display">Неверный логин или пароль</p>
+                        <form method="post" class="form-login">
+                            <div class="input-wrap">
+                                <i class="fa fa-user input-icon"></i>
+                                <input type="text" name="email" value="" class="form-input log-login" placeholder="Никнейм или email" required="">
+                            </div>                               
+                            <div class="input-wrap">
+                                <i class="fa fa-lock input-icon"></i>
+                                <input type="password" name="password" class="form-input log-pass" placeholder="Пароль" required="">
+                            </div>        
+                            <div class="input-wrap">
+                                <div class="form-check">
+                                    <input class="form-check-input custom-input" type="checkbox" value="" id="rememberMe" checked>
+                                    <label class="form-check-label" for="rememberMe">
+                                        Запомнить меня
+                                    </label>
+                                </div>
+                            </div>                        
+                            <div class="modal-footer mf-footer">
+                                <button type="submit" class="submit-form btn btn-primary">Войти</button>
+                            </div>                           
+                        </form>
+                    </div>
+                </div>
+                <div id="registration" class="tabcontent">
+                    <div class="modal-body mf-body">
+                        <p class="mf-title">Регистрация через социальные сети</p>
+                        <div class="social-sign-wrap center-flex">
+                            <div class="row social-sign">
+                                <div class="col ss-button-wrap l"><a href="" class="col ss-button center-flex ss-fb"><i class="fa fa-facebook"></i></a></div>
+                                <div class="col ss-button-wrap"><a href="" class="col ss-button center-flex ss-tw"><i class="fa fa-twitter"></i></a></div>
+                                <div class="col ss-button-wrap"><a href="" class="col ss-button center-flex ss-gg"><i class="fa fa-google-plus"></i></a></div>
+                                <div class="col ss-button-wrap r"><a href="" class="col ss-button center-flex ss-vk"><i class="fa fa-vk"></i></a></div>
+                            </div>
+                        </div>
+                        <p class="mf-title">Регистрация через сайт</p>
+                        <form method="post" class="mf-form">
+                            <p class="reg-note">Выберите себе имя, которое будет отображаться в вашем профиле на сайте:</p>
+                            <div class="input-wrap iw-note">
+                                <i class="fa fa-user input-icon"></i>
+                                <input type="text" name="login" value="" class="form-input reg-name" placeholder="Никнейм" required="">
+                            </div>
+                            <p class="reg-note">Привяжите адрес электронной почты</p>
+                            <div class="input-wrap iw-note">
+                                <i class="bi bi-envelope-at-fill input-icon"></i>
+                                <input type="text" name="email" value="" class="form-input reg-mail" placeholder="Email" required="">
+                            </div>
+                            <p class="reg-note">Придумайте достаточно сложный пароль:</p> 
+                            <div id="valid-block" class="pass-note">
+                                <p>Пароль должен содержать следующее:</p>
+                                <p id="valid-letter" class="invalid">Нижний регистр буква</p>
+                                <p id="valid-capital" class="invalid">Заглавная (прописная) буква</p>
+                                <p id="valid-number" class="invalid">Число</p>
+                                <p id="valid-length" class="invalid">Минимум 8 символов</p>
+                            </div>                              
+                            <div class="input-wrap iw-note">
+                                <i class="fa fa-lock input-icon"></i>
+                                <input type="password" name="pass1" class="form-input reg-pass1" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" placeholder="Пароль" required="">
+                            </div> 
+                            <p class="reg-note">Повторите пароль:</p>
+                            <p id="pass-mismatch" class="reg-note invalid">Пароли не совпадают!</p>
+                            <p id="pass-match" class="reg-note valid">Пароли совпадают!</p>
+                            <div class="input-wrap iw-note">
+                                <i class="fa fa-lock input-icon"></i>
+                                <input type="password" name="pass2" class="form-input reg-pass2" placeholder="Повторите пароль" required="">
+                            </div>        
+                            <div class="input-wrap">
+                                <div class="form-check">
+                                    <input class="form-check-input custom-input" type="checkbox" value="" id="acceptRules" checked required="">
+                                    <span class="reg-note">Нажимая «Далее», Вы соглашаетесь с </span><a href="../reglament.html" class="span-link reg-note">регламентом</a><span class="reg-note"> и </span><a href="../politic.html" class="span-link reg-note">политикой конфиденциальности</a>                                                             
+                                </div>
+                            </div>                        
+                            <div class="modal-footer mf-footer">
+                                <button type="submit" class="submit-form btn btn-primary">Отправить</button>
+                            </div>                           
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="https://kit.fontawesome.com/60a957becd.js" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.3.1/js/bootstrap.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4" crossorigin="anonymous"></script>
+    <script src="../js/after-header.js"></script>
+    <script src="../js/mf.js"></script>
+    <script src="../js/theme.js"></script>
+    <script src="../js/login.js"></script>
+    <script src="../js/valid.js"></script>
+    <script src="../js/onload.js"></script>
+    <script src="../js/book-filter.js"></script>
+    <script src="../js/input-range.js"></script>
+    <script src="../js/book-card.js"></script>
+</body>
+</html>

@@ -1,0 +1,109 @@
+.forum-table-wrap {
+    padding:20px;
+    padding-top:0;
+}
+.forum-table {
+    width:100%;
+    min-width: 800px;
+    background-color: var(--color-ft);
+    border:15px var(--color-ft) solid;
+    position: relative;
+    line-height: 1.15;
+}
+
+td {
+    width:50px;
+    /* height:80px; */
+    background-color: var(--color-ft-str);
+    border:1px solid black;
+}
+
+.ft-title>td {
+    background-color: var(--color-ft-title);
+    /* height:40px; */
+    border-top:10px solid var(--color-ft);
+    padding:15px;
+}
+
+.ft-str>td {
+    padding:10px;
+}
+.ft-str>td a, .ft-footer-body td a {
+    color:var(--color-submit);
+}
+.ft-str>td a:hover, .ft-footer-body td a:hover {
+    font-weight: bold;
+    color:var(--color-submit-hv);
+}
+
+td:has(span.big) {
+    font-size:14px;
+}
+
+span.big a {
+    font-size:24px;  
+}
+span.big {
+    display: block;
+    margin-bottom:-10px;
+}
+
+.ft-col-0 {
+    width: 50%;
+}
+.ft-col-1 {
+    width: 6%;
+}
+.ft-col-2 {
+    width: 6%;
+}
+.ft-col-3 {
+    width: 18%;
+}
+.ft-col-4 {
+    width: 20%;
+}
+
+.ft-str>td+td+td, .ft-str>td+td, .ft-str>td+td+td+td {
+    vertical-align: middle;
+    text-align: center;
+}
+
+.ft-str>td+td+td+td+td {
+    font-size:14px;
+    vertical-align: top;
+    text-align: left;
+}
+
+tr.ft-str:has(td:hover) td {
+    background-color: var(--color-ft-str-hv);
+}
+
+tr.ft-head td {
+    text-align: center;
+    padding:5px;
+    background-color: var(--color-ft-head);
+}
+
+.ft-footer {
+    border-top:10px solid var(--color-ft);
+}
+
+.ft-footer table {
+    width:100%;
+}
+
+.ft-footer-head td {
+    background-color: var(--color-ft-title);
+    padding:10px;
+}
+
+.ft-footer-body td {
+    padding:15px;
+    text-align: center;
+}
+
+td {
+    border:1px solid var(--color-bg2);
+}
+

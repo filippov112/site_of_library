@@ -1,0 +1,168 @@
+.mf {
+    background-color: var(--color-bg);
+    padding:15px;
+}
+
+#registration {
+    display:none;
+}
+
+.mf-header {
+    display:flex;
+    border-bottom:1px solid var(--color-text);
+    padding:0;
+    margin:0;
+}
+.mf-header-space {
+    width:100%;
+}
+
+.tab-active {
+    font-weight:600;
+}
+
+.mf-body {
+    border:0;
+    padding:0;
+}
+
+.mf-footer {
+    border-top: 1px solid var(--color-text);
+    padding:15px 0 0 0;
+}
+
+.mf-title {
+    margin:8px 0;
+}
+.ss-button {
+    padding:7px 5px;
+    margin:10px 0;
+}
+
+.ss-button-wrap {
+    padding:0 5px;
+}
+
+.ss-button-wrap.l {
+    padding-left:0;
+}
+
+.ss-button-wrap.r {
+    padding-right:0;
+}
+
+.ss-fb {
+    background-color: var(--color-fb);
+}
+.ss-tw {
+    background-color: var(--color-tw);
+}
+.ss-gg {
+    background-color: var(--color-gg);
+}
+.ss-vk {
+    background-color: var(--color-vk);
+}
+
+
+.mf-title {
+    text-align: center;
+}
+
+.social-sign-wrap {
+    position:relative;
+    display: block;
+    padding-bottom: 15px;
+    margin: 0;
+    margin-bottom:15px;
+    border-bottom: 1px solid var(--color-text);
+}
+
+.social-sign {
+    width:100%;
+    margin:0;
+    padding:0;
+}
+
+.social-sign:after {
+    content: "или";
+    background-color: var(--color-bg);
+    position: absolute;
+    bottom: -12px;
+    left: 50%;
+    padding:0 15px;
+    margin:0;
+    transform: translateX(-50%);
+}
+
+.form-input {
+    margin:0;
+    padding:5px 12px;
+    border:0;
+    width:100%;
+    height:32px;
+    padding-left:32px;
+    border-radius:3px;
+    background-color: var(--color-input);
+}
+
+.form-input:focus {
+    outline:0;
+}
+
+.input-wrap {
+    display:flex;
+    align-items: center;
+    margin:10px 0;
+    overflow: visible;
+}
+
+.input-icon {
+    position: absolute;
+}
+.input-icon:before {
+    margin-left: 8px;
+    color:var(--color-input-icon);
+}
+.custom-input {
+    background:var(--color-input);
+    outline:0;
+}
+.custom-input:checked {
+    background-color: var(--color-submit-hv);
+    border:0;
+}
+.custom-input:focus,.custom-input:hover,.custom-input:active {
+    box-shadow: none;
+    border:0;
+}
+
+.reg-valid {
+    margin-left:-1.5em;
+    font-size:24px;
+}
+
+.bad-pass {
+    text-align: center;
+    color:red;
+}
+
+.bad-input {
+    border: 1px solid red;
+}
+
+.reg-note {
+    font-size:13px;
+}
+.iw-note {
+    margin-top:0;
+}
+#valid-block {
+    margin-top:10px;
+}
+.pass-note p {
+    font-size:13px;
+}
+#valid-block, #pass-mismatch, #pass-match {
+    display:none;
+}

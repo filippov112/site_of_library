@@ -1,0 +1,37 @@
+#articles-content {
+    padding:0 20px 40px;
+    min-height:calc(100vh - 110px); 
+}
+#articles-content h4 {
+    font-size: 2rem;
+    line-height: 1.6;
+    font-weight: bold;
+    padding:15px 0;
+}
+
+#articles-content h6 {
+    font-size: 1.3rem;
+    margin:10px 0;
+    font-weight: bold;
+}
+
+#articles-content ul {
+    margin: 0 0 0 20px;
+    padding: 0 0 0 20px;
+    list-style: disc;
+}
+#articles-content li {
+    margin-bottom: 10px;
+}
+#articles-content b {
+    display: block;
+    margin:7px 0;
+    font-weight: bold;
+}
+
+.eb-faq {
+    display: grid;
+    justify-content: center;
+    grid-template-columns: 100%;
+    grid-gap: 20px;
+}

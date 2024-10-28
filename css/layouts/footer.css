@@ -1,0 +1,20 @@
+footer {
+    background-color:var(--color-bg);
+    padding: 15px 0 15px 0;
+    position: sticky;
+    z-index:3;
+}
+
+.vk {
+    width:22px; 
+    margin-right:5px;
+}
+
+.vk-block {
+    width: 50%;
+    margin: 1ch auto 1ch auto;
+}
+
+.social-title {
+    font-weight: bold;
+}
